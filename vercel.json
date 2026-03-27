@@ -1,0 +1,6 @@
+{
+  "outputDirectory": "packages/renderer/dist/web",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

@@ -1,0 +1,696 @@
+---
+title: "MCP Dashboard Documentation"
+description: "Current documentation for the Luminon MCP dashboard workspace"
+---
+
+# MCP Dashboard Documentation
+
+## Overview
+
+Luminon is a local-first dashboard workspace made of four pieces:
+
+- An MCP server for creating and editing dashboards and datasets
+- A shared schema package with Zod contracts
+- A React renderer and small Express API for local preview
+- A CLI that starts the MCP server and renderer with a shared data directory
+
+This document describes the code that exists in this repository today. It intentionally excludes older or confusing behavior that is no longer exposed.
+
+## Repository Structure
+
+- `packages/shared`: shared Zod schemas, chart types, filter contracts, template schemas, and TypeScript types
+- `packages/mcp-server`: the MCP tool server and dashboard/dataset storage logic
+- `packages/renderer`: the browser UI, static demo build, and local API server
+- `packages/cli`: the `luminon` CLI used to run the MCP server and renderer
+- `data/`: repo seed datasets and dashboards used for fresh installs and the static demo
+- `docs/`: repository documentation
+
+## Local Development
+
+Install dependencies and build all workspaces:
+
+```bash
+npm install
+npm run build
+```
+
+Run the MCP server only:
+
+```bash
+npm run dev:mcp
+```
+
+Run the renderer only:
+
+```bash
+npm run dev:renderer
+```
+
+Run both for local development:
+
+```bash
+npm run dev:stack
+```
+
+Current local endpoints:
+
+- Renderer UI: `http://localhost:5173`
+- Renderer API: `http://localhost:4010`
+- MCP transport: stdio only
+
+## CLI Usage
+
+The published package exposes a `luminon` CLI. In this repo, the built binary is `packages/cli/dist/index.js`.
+
+Main commands:
+
+```bash
+luminon mcp
+luminon start renderer
+luminon stop renderer
+luminon stop mcp
+luminon status
+```
+
+Recommended split:
+
+- Run `luminon mcp` inside the AI tool as the stdio MCP process
+- Run `luminon start renderer` separately when you want the browser preview
+
+Direct package usage:
+
+```bash
+npx -y @luminondev/mcp-dashboard mcp --mode lite
+npx -y @luminondev/mcp-dashboard start renderer
+```
+
+`start stack` is intentionally discouraged in the CLI because MCP over stdio should be owned by the host AI client.
+
+## Tool Modes
+
+The MCP server supports three exposure modes:
+
+- `full`: all MCP tools are exposed
+- `lite`: only the lower-token core toolset is exposed
+- `ultra-lite`: a smaller creation-and-inspection toolset for very limited clients
+
+Use `lite` or `ultra-lite` when working with clients that have tight daily quotas.
+
+Example:
+
+```bash
+LUMINON_MCP_MODE=lite luminon mcp
+```
+
+In AI client config, set the same environment variable on the MCP server process.
+
+Accepted values:
+
+- `full`
+- `lite`
+- `ultra-lite`
+
+The CLI also supports a mode flag that overrides the environment variable:
+
+```bash
+luminon mcp --mode lite
+luminon mcp --mode ultra-lite
+```
+
+Precedence:
+
+1. `--mode`
+2. `LUMINON_MCP_MODE`
+3. default `full`
+
+## Data Directory and Persistence
+
+By default, user data is stored in:
+
+```text
+~/Documents/luminon
+```
+
+You can override it with:
+
+```bash
+MCP_DATA_DIR=/custom/path
+```
+
+The active store contains these files:
+
+- `dashboards.json`
+- `datasets.json`
+- `dashboard_versions.json`
+- `dataset_snapshots.json`
+- `deleted_dashboards.json`
+
+## Seed Behavior
+
+The repo ships with seed files in `data/`.
+
+Current behavior on startup:
+
+- If the user store does not exist yet, it is seeded from the repo files
+- If the user store already exists, missing repo seed dashboards are appended by `id`
+- If the user store already exists, missing repo seed datasets are appended by `id`
+- Existing user dashboards and datasets are not overwritten
+- The built-in read-only dataset `default_business` is always injected if missing
+
+This matters for upgrades: changing the seed files in the repo and restarting the updated MCP server is enough to make new seed IDs appear in the user store.
+
+## Built-in Demo Seeds
+
+The repo currently ships these seeded demo datasets:
+
+- `coffee_roastery_lab`
+- `hr_dataset`
+- `sales_complex`
+- `marketing_campaign_performance`
+
+The repo currently ships these seeded demo dashboards:
+
+- `Coffee Roastery Lab`
+- `HR Workforce Overview`
+- `Sales Performance Hub`
+- `Marketing Campaign Command Center`
+
+There is also a built-in read-only dataset:
+
+- `default_business`
+
+And one built-in template:
+
+- `business-3x3`
+
+## Static Demo
+
+The renderer supports a static mode controlled by:
+
+```bash
+VITE_STATIC_DEMO=true
+```
+
+In static demo mode:
+
+- The UI loads `demo-data.json` instead of calling the live API
+- The file is generated automatically from the repo seed dashboards and datasets
+- Dashboard filters still work because filtering is applied client-side in the renderer
+- Updating the repo seeds and rebuilding the renderer updates the static demo output
+
+The static demo payload is generated by:
+
+- `packages/renderer/scripts/generate-static-demo.mjs`
+
+The renderer build already runs this script before Vite:
+
+- `packages/renderer/package.json`
+
+## Renderer API
+
+The local renderer includes an API used by the browser UI.
+
+Current routes:
+
+- `GET /api/health`
+- `GET /api/dashboards`
+- `GET /api/dashboards/:id`
+- `PATCH /api/dashboards/:id`
+- `DELETE /api/dashboards/:id/filters/:filterId`
+- `GET /api/datasets`
+- `PATCH /api/datasets/:id`
+- `GET /api/events`
+
+Notes:
+
+- `GET /api/dashboards/:id` returns only published dashboards
+- `GET /api/dashboards` returns the local dashboard list used by the main UI
+- `GET /api/events` is an SSE endpoint used for live refreshes
+
+### Example: refresh a demo dataset without MCP (no AI tokens)
+
+Replace the `coffee_roastery_lab` dataset monthly using the local API.
+
+Bash:
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+CSV_FILE="$1"
+API_URL="${API_URL:-http://localhost:4010/api/datasets/coffee_roastery_lab}"
+
+jq -Rs --arg mode "replace" '{csv: ., mode: $mode, allowSchemaChange: true}' < "$CSV_FILE" \
+| curl -sS -X PATCH "$API_URL" \
+    -H "Content-Type: application/json" \
+    --data-binary @- \
+| jq -r '.dataset.id + " updated at " + (.dataset.updatedAt // "unknown")'
+```
+
+Python:
+
+```python
+import requests, json, pathlib, sys
+
+csv_path = pathlib.Path(sys.argv[1])
+api_url = "http://localhost:4010/api/datasets/coffee_roastery_lab"
+body = {
+    "csv": csv_path.read_text(encoding="utf-8"),
+    "mode": "replace",
+    "allowSchemaChange": True,
+}
+r = requests.patch(api_url, json=body, timeout=30)
+r.raise_for_status()
+print(r.json()["dataset"]["updatedAt"])
+```
+
+Run it via cron (example, day 1 at 03:00):
+
+```
+0 3 1 * * /usr/local/bin/update_coffee.sh /path/to/coffee_roastery_lab.csv >> /var/log/update_coffee.log 2>&1
+```
+
+## MCP Tool Surface
+
+These are the MCP tools exposed by `packages/mcp-server/src/index.ts` today.
+
+### Dashboard tools
+
+- `create_dashboard`
+- `update_dashboard`
+- `add_chart`
+- `add_chart_to_dashboard`
+- `delete_chart`
+- `delete_dashboard`
+- `list_dashboards`
+- `snapshot_dashboard`
+- `list_dashboard_versions`
+- `restore_dashboard_version`
+- `undo_dashboard`
+- `restore_deleted_dashboard`
+- `list_dashboard_filters`
+- `update_dashboard_filters`
+
+### Dataset tools
+
+- `register_dataset`
+- `update_dataset`
+- `restore_dataset_snapshot`
+- `list_datasets`
+- `list_dataset_content`
+- `describe_dataset`
+
+### Templates and natural language
+
+- `list_templates`
+- `create_dashboard_from_template`
+- `dashboard_nl`
+
+### Chart creation and styling
+
+- `create_chart`
+- `list_theme_presets`
+- `set_chart_theme`
+- `set_chart_presentation`
+- `reset_chart_presentation`
+
+In `lite` mode, the exposed toolset is reduced to:
+
+- `create_dashboard`
+- `update_dashboard`
+- `delete_dashboard`
+- `list_dashboards`
+- `list_templates`
+- `create_dashboard_from_template`
+- `dashboard_nl`
+- `register_dataset`
+- `update_dataset`
+- `restore_dataset_snapshot`
+- `list_datasets`
+- `list_dataset_content`
+- `describe_dataset`
+- `create_chart`
+- `list_dashboard_filters`
+- `update_dashboard_filters`
+
+In `ultra-lite` mode, the exposed toolset is reduced further to:
+
+- `create_dashboard`
+- `list_dashboards`
+- `list_templates`
+- `create_dashboard_from_template`
+- `register_dataset`
+- `list_datasets`
+- `describe_dataset`
+- `list_dataset_content`
+- `create_chart`
+- `list_dashboard_filters`
+- `update_dashboard_filters`
+
+## `dashboard_nl` Coverage
+
+`dashboard_nl` is the main non-technical entry point. It currently handles:
+
+- listing dashboards
+- listing datasets
+- describing a dataset
+- listing templates
+- listing theme presets
+- creating a dashboard
+- creating a dashboard from a template
+- registering a dataset from CSV
+- renaming a dashboard
+- changing dashboard columns or auto-layout
+- applying dashboard theme and presentation changes
+- creating `bar`, `line`, `area`, `scatter`, `radar`, `donut`, `funnel`, `kpi_card`, `table`, `combo`, and grouped/stacked multi-bar charts
+
+It accepts both English and Spanish-style requests through lightweight intent matching. The response payload is intentionally summarized to keep MCP usage lower in constrained clients.
+
+## Dashboard Operations
+
+### `create_dashboard`
+
+Creates a dashboard with optional:
+
+- `name`
+- `subtitle`
+- `themePreset`
+- `presentation`
+- `charts`
+- `layout`
+- `filters`
+- `published`
+
+If layout is omitted, the default is a `3x3` grid with no items.
+
+### `update_dashboard`
+
+Updates dashboard-level properties through one tool call. Current supported fields are:
+
+- `name`
+- `subtitle`
+- `themePreset`
+- `presentation`
+- `columns`
+- `layout`
+- `autoLayout`
+
+There is no separate MCP tool named `set_dashboard_theme` or `set_dashboard_presentation`; use `update_dashboard`.
+
+### `add_chart` vs `add_chart_to_dashboard`
+
+- `add_chart` adds a chart payload without automatic placement
+- `add_chart_to_dashboard` adds a chart and places it in the grid automatically unless you pass a custom placement
+
+### Dashboard deletion and recovery
+
+- `delete_dashboard` requires `confirm: "DELETE"`
+- Deleted dashboards are stored in `deleted_dashboards.json`
+- `restore_deleted_dashboard` restores from that deleted store and can optionally rename the dashboard or assign a new id
+
+## Snapshot Model
+
+Dashboard snapshots are intentionally single-instance per dashboard.
+
+Current behavior:
+
+- `snapshot_dashboard` overwrites the existing snapshot for that dashboard
+- `list_dashboard_versions` returns that current snapshot if it exists
+- `restore_dashboard_version` restores from the snapshot
+- `undo_dashboard` restores the latest stored snapshot
+
+This is not a full version history. It is a single rollback point per dashboard.
+
+## Dataset Operations
+
+### `register_dataset`
+
+Datasets can be created from:
+
+- raw CSV text
+- JSON rows
+
+### `update_dataset`
+
+Current update modes:
+
+- `replace`
+- `append`
+
+Important behavior:
+
+- Exactly one source must be provided: `csv` or `rows`
+- Schema changes require `allowSchemaChange: true`
+- Built-in read-only datasets cannot be updated
+- The server stores a single rollback snapshot before mutation
+
+### `restore_dataset_snapshot`
+
+Restores the last stored snapshot for a dataset. This is also a single-level undo, not a full version history.
+
+## Chart Types That Actually Exist
+
+Stored and rendered chart types:
+
+- `bar`
+- `bar_grouped`
+- `bar_stacked`
+- `line`
+- `area`
+- `scatter`
+- `radar`
+- `donut`
+- `funnel`
+- `kpi_card`
+- `table`
+- `combo`
+
+`funnel` and `combo` are real features in the current codebase. They exist in:
+
+- shared schemas
+- server-side chart creation
+- renderer display logic
+
+## `create_chart` Types
+
+The unified `create_chart` MCP tool accepts:
+
+- `bar`
+- `line`
+- `area`
+- `scatter`
+- `radar`
+- `donut`
+- `funnel`
+- `kpi_card`
+- `table`
+- `combo`
+- `multi_bar`
+
+Important distinction:
+
+- `multi_bar` is an input alias for creating multi-series bar charts
+- The stored chart type becomes `bar_grouped` or `bar_stacked` depending on the requested mode
+
+## Template Support
+
+Templates are a narrower subset than `create_chart`.
+
+The current template schema supports these chart types:
+
+- `kpi_card`
+- `table`
+- `bar`
+- `line`
+- `area`
+- `scatter`
+- `radar`
+- `donut`
+
+So:
+
+- `funnel`, `combo`, and multi-series bars are available through `create_chart`
+- They are not part of the current template chart schema
+
+## Dashboard Filters
+
+Dashboard filters are stored on the dashboard and are different from chart-source filters.
+
+Current dashboard filter fields:
+
+- `id`
+- `field`
+- `fieldType`
+- `op`
+- `value`
+- `valueTo`
+- `applyTo`
+
+Current dashboard filter field types:
+
+- `string`
+- `number`
+- `date`
+
+Current dashboard filter operators:
+
+- `eq`
+- `neq`
+- `gte`
+- `lte`
+- `between`
+- `in`
+- `not_in`
+
+Notes:
+
+- `gt` and `lt` are not dashboard filter operators
+- `applyTo` can restrict a filter to specific chart ids or dataset ids
+- `between` uses `value` and `valueTo`
+- `in` and `not_in` accept arrays in the schema
+
+## Renderer Filter UI
+
+The renderer currently maps dashboard filter operators to these controls:
+
+- `eq`, `in`, `not_in`: single `<select>` input
+- `between`: two text inputs
+- `gte`, `lte`, `neq`: single text input
+
+Important renderer behavior today:
+
+- `in` does show a selector in the renderer
+- That selector is single-select, not multi-select
+- `not_in` also uses a single-select UI
+- If a filter is defined with an array value in stored JSON, the filter engine supports it, but the built-in renderer UI still exposes only one selected value at a time
+
+## Chart-Source Filters
+
+Chart-source filters are used inside `create_chart` and chart `source` definitions. They are a different schema from dashboard filters.
+
+Current chart-source operators:
+
+- `eq`
+- `neq`
+- `gt`
+- `gte`
+- `lt`
+- `lte`
+- `in`
+
+Chart-source filters also support an optional `dateRange`.
+
+## Aggregation and Sorting
+
+Charts generated from datasets support these aggregations where applicable:
+
+- `sum`
+- `avg`
+- `count`
+
+Month-like labels are sorted chronologically in both the MCP server and renderer when the values look like:
+
+- `Jan`
+- `January`
+- `2025-Jan`
+- similar month strings
+
+This is why month-based demo dashboards now stay in calendar order instead of alphabetical order.
+
+## Theme Presets and Presentation
+
+Current theme preset ids:
+
+- `clean`
+- `business`
+- `dark_analytics`
+- `pastel`
+- `high_contrast`
+- `textured`
+
+Theme and presentation behavior:
+
+- Dashboards can set `themePreset` and `presentation` through `create_dashboard` and `update_dashboard`
+- Individual charts can override theme and presentation through:
+  - `set_chart_theme`
+  - `set_chart_presentation`
+  - `reset_chart_presentation`
+
+## Practical Limits Enforced by the Server
+
+Current safety limits include:
+
+- maximum 12 charts per dashboard
+- maximum 50,000 dataset rows
+- maximum CSV size of 20 MB for dataset registration or replacement
+- table charts capped at 500 rows
+
+There are also chart-specific limits used to avoid renderer degradation for large payloads.
+
+## Current Built-in Template
+
+The repo currently ships one template:
+
+- `business-3x3`
+
+It expects the `default_business` dataset with these columns:
+
+- `year`
+- `month`
+- `country`
+- `channel`
+- `category`
+- `sales`
+- `orders`
+
+The template metadata stored in `packages/shared/templates.json` is now English and matches the rest of the public-facing demo content.
+
+## Troubleshooting
+
+### A seed dataset or dashboard does not appear
+
+Check these points:
+
+- Restart the MCP server so seed sync runs again
+- Confirm which data directory the running process is using
+- Make sure the AI client is launching this updated repo or the updated published package
+- Verify the dataset or dashboard id in the active `datasets.json` or `dashboards.json`
+
+### The renderer shows filters, but the behavior looks narrower than the schema
+
+That is expected in one case:
+
+- The dashboard filter schema supports array values for `in` and `not_in`
+- The built-in renderer currently exposes those operators with a single-select control, not a multi-select control
+
+### A chart type seems missing
+
+Current implementation status:
+
+- `funnel` exists
+- `combo` exists
+- grouped and stacked multi-series bars exist as `bar_grouped` and `bar_stacked`
+- `multi_bar` is only the creation-time input type for `create_chart`
+
+### Claude or another client burns quota too quickly
+
+The main historical cause was oversized MCP responses, especially dataset listings that returned full row payloads. The server now returns smaller summaries for heavy responses, and `list_datasets` returns metadata instead of full dataset contents.
+
+If a client still has a low daily quota:
+
+- use `LUMINON_MCP_MODE=lite`
+- use `LUMINON_MCP_MODE=ultra-lite` for the most restrictive clients
+- prefer `list_datasets` and `describe_dataset` before broader exploration
+- use `list_dataset_content` only for the dataset you actually want to inspect
+
+## Recommended Mental Model
+
+Use the project in this order:
+
+1. Register or inspect a dataset
+2. Create a dashboard
+3. Add charts with `create_chart` or raw payloads with `add_chart_to_dashboard`
+4. Add dashboard filters with `update_dashboard_filters`
+5. Preview in the renderer
+6. Use snapshots and restore tools when iterating
+
+If you want the least technical entry point, use `dashboard_nl` and let the server map the request to the lower-level tools.

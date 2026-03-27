@@ -1,0 +1,11 @@
+node_modules
+src
+tsconfig.json
+*.log
+.DS_Store
+.npmignore
+.codexignore
+.claudeignore
+.gemini
+.windsurf
+exports

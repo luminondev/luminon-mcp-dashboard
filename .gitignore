@@ -1,0 +1,53 @@
+node_modules/
+dist/
+exports/
+
+# Package artifacts
+*.tgz
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor and AI client local config
+.vscode/
+.idea/
+.zed/
+.cursor/
+.claude/
+.codex/
+.codexignore
+.claudeignore
+.gemini/
+.windsurf/
+
+# Test and build caches
+.cache/
+.turbo/
+coverage/
+*.tsbuildinfo
+
+# Local runtime data
+.luminon-lock.json
+logs/
+*.pid
+*.sqlite
+*.sqlite3
+
+# Local agent / deploy trigger docs
+AGENTS.md
+CLAUDE.md
+vercel-trigger

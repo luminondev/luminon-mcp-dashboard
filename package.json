@@ -1,0 +1,41 @@
+{
+  "name": "@luminondev/mcp-dashboard",
+  "version": "0.1.0",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "bin": {
+    "luminon": "packages/cli/dist/index.js"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "files": [
+    "packages/cli/dist/**/*",
+    "packages/mcp-server/dist/**/*",
+    "packages/renderer/dist/**/*",
+    "packages/shared/dist/**/*",
+    "packages/shared/templates.json",
+    "data/**/*",
+    "docs/MCP_DOCUMENTATION.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "zod": "^3.23.8"
+  },
+  "scripts": {
+    "build": "npm run build -w @mcp-dashboard/shared && npm run build -w @mcp-dashboard/mcp-server && npm run build -w @mcp-dashboard/renderer && npm run build -w @mcp-dashboard/cli",
+    "dev:mcp": "npm run dev -w @mcp-dashboard/mcp-server",
+    "dev:renderer": "npm run dev -w @mcp-dashboard/renderer",
+    "dev:stack": "concurrently \"npm run dev:mcp\" \"npm run dev:renderer\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

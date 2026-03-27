@@ -1,0 +1,1153 @@
+year,month,period,country,channel,category,sales,orders,avg_order_value
+2025,Dec,2025-12,US,Online,Electronics,162569,296,549.22
+2025,Dec,2025-12,US,Online,Furniture,158576,191,830.24
+2025,Dec,2025-12,UK,Online,Electronics,158157,273,579.33
+2025,Dec,2025-12,Canada,Online,Electronics,121567,237,512.94
+2025,Dec,2025-12,UK,Online,Furniture,119449,155,770.64
+2025,Dec,2025-12,US,Online,Office Supplies,117226,522,224.57
+2025,Dec,2025-12,UK,Retail,Electronics,112786,211,534.53
+2025,Dec,2025-12,Canada,Online,Furniture,111360,148,752.43
+2025,Dec,2025-12,US,Retail,Furniture,108825,145,750.52
+2025,Dec,2025-12,US,Retail,Electronics,104206,217,480.21
+2025,Dec,2025-12,UK,Online,Office Supplies,91678,431,212.71
+2025,Dec,2025-12,US,Wholesale,Electronics,87152,175,498.01
+2025,Dec,2025-12,US,Online,Accessories,86402,690,125.22
+2025,Dec,2025-12,US,Retail,Office Supplies,85128,407,209.16
+2025,Dec,2025-12,Canada,Online,Office Supplies,82430,405,203.53
+2025,Dec,2025-12,UK,Retail,Furniture,81406,117,695.78
+2025,Dec,2025-12,Canada,Retail,Electronics,78138,174,449.07
+2025,Dec,2025-12,US,Wholesale,Furniture,78117,108,723.31
+2025,Dec,2025-12,Canada,Retail,Furniture,76158,112,679.98
+2025,Dec,2025-12,Mexico,Online,Electronics,66967,184,363.95
+2025,Dec,2025-12,UK,Online,Accessories,66337,565,117.41
+2025,Dec,2025-12,Canada,Online,Accessories,64501,552,116.85
+2025,Dec,2025-12,UK,Wholesale,Electronics,62982,139,453.11
+2025,Dec,2025-12,US,Wholesale,Office Supplies,62601,308,203.25
+2025,Dec,2025-12,US,Retail,Accessories,61666,534,115.48
+2025,Dec,2025-12,Mexico,Online,Furniture,61415,115,534.04
+2025,Dec,2025-12,Canada,Wholesale,Electronics,61388,136,451.38
+2025,Dec,2025-12,UK,Retail,Office Supplies,60224,320,188.2
+2025,Dec,2025-12,Canada,Retail,Office Supplies,59901,316,189.56
+2025,Dec,2025-12,UK,Wholesale,Furniture,57844,87,664.87
+2025,Dec,2025-12,Canada,Wholesale,Furniture,55069,84,655.58
+2025,Dec,2025-12,Mexico,Retail,Electronics,47638,142,335.48
+2025,Dec,2025-12,Canada,Retail,Accessories,46026,427,107.79
+2025,Dec,2025-12,Mexico,Online,Office Supplies,45357,314,144.45
+2025,Dec,2025-12,UK,Retail,Accessories,42633,415,102.73
+2025,Dec,2025-12,Mexico,Retail,Furniture,41948,87,482.16
+2025,Dec,2025-12,Mexico,Online,Accessories,39204,450,87.12
+2025,Dec,2025-12,UK,Wholesale,Office Supplies,38571,226,170.67
+2025,Dec,2025-12,US,Wholesale,Accessories,36424,362,100.62
+2025,Dec,2025-12,Canada,Wholesale,Office Supplies,35344,214,165.16
+2025,Dec,2025-12,UK,Wholesale,Accessories,33482,324,103.34
+2025,Dec,2025-12,Mexico,Wholesale,Electronics,33309,105,317.23
+2025,Dec,2025-12,Mexico,Retail,Office Supplies,32962,245,134.54
+2025,Dec,2025-12,Mexico,Wholesale,Furniture,32929,68,484.25
+2025,Dec,2025-12,Canada,Wholesale,Accessories,32469,316,102.75
+2025,Dec,2025-12,Mexico,Retail,Accessories,25415,332,76.55
+2025,Dec,2025-12,Mexico,Wholesale,Office Supplies,18978,164,115.72
+2025,Dec,2025-12,Mexico,Wholesale,Accessories,17574,243,72.32
+2025,Nov,2025-11,US,Online,Furniture,133562,167,799.77
+2025,Nov,2025-11,US,Online,Electronics,131392,254,517.29
+2025,Nov,2025-11,UK,Online,Electronics,128808,235,548.12
+2025,Nov,2025-11,UK,Online,Furniture,126935,152,835.1
+2025,Nov,2025-11,US,Retail,Electronics,119607,222,538.77
+2025,Nov,2025-11,Canada,Online,Electronics,117538,222,529.45
+2025,Nov,2025-11,US,Online,Office Supplies,113267,489,231.63
+2025,Nov,2025-11,Canada,Online,Furniture,112343,142,791.15
+2025,Nov,2025-11,US,Retail,Furniture,91733,127,722.31
+2025,Nov,2025-11,UK,Retail,Electronics,91496,181,505.5
+2025,Nov,2025-11,UK,Online,Office Supplies,88698,404,219.55
+2025,Nov,2025-11,UK,Retail,Furniture,87694,116,755.98
+2025,Nov,2025-11,Canada,Retail,Electronics,84000,172,488.37
+2025,Nov,2025-11,US,Retail,Office Supplies,82409,382,215.73
+2025,Nov,2025-11,Canada,Online,Office Supplies,79590,379,210
+2025,Nov,2025-11,Canada,Retail,Furniture,76632,107,716.19
+2025,Nov,2025-11,US,Online,Accessories,69963,592,118.18
+2025,Nov,2025-11,US,Wholesale,Electronics,69357,149,465.48
+2025,Nov,2025-11,US,Wholesale,Furniture,67578,96,703.94
+2025,Nov,2025-11,Mexico,Online,Electronics,65067,173,376.11
+2025,Nov,2025-11,UK,Retail,Office Supplies,64619,316,204.49
+2025,Nov,2025-11,Mexico,Online,Furniture,61873,110,562.48
+2025,Nov,2025-11,Canada,Wholesale,Electronics,57098,125,456.78
+2025,Nov,2025-11,UK,Online,Accessories,53555,484,110.65
+2025,Nov,2025-11,Canada,Retail,Office Supplies,52528,282,186.27
+2025,Nov,2025-11,US,Retail,Accessories,49895,458,108.94
+2025,Nov,2025-11,UK,Wholesale,Electronics,49783,118,421.89
+2025,Nov,2025-11,UK,Wholesale,Furniture,49774,77,646.41
+2025,Nov,2025-11,UK,Retail,Accessories,48576,422,115.11
+2025,Nov,2025-11,Mexico,Retail,Electronics,46475,134,346.83
+2025,Nov,2025-11,Canada,Wholesale,Furniture,45636,73,625.15
+2025,Nov,2025-11,Canada,Retail,Accessories,44452,400,111.13
+2025,Nov,2025-11,Canada,Online,Accessories,44144,435,101.48
+2025,Nov,2025-11,Mexico,Online,Office Supplies,44020,295,149.22
+2025,Nov,2025-11,US,Wholesale,Office Supplies,41452,239,173.44
+2025,Nov,2025-11,US,Wholesale,Accessories,40557,364,111.42
+2025,Nov,2025-11,Canada,Wholesale,Office Supplies,38591,213,181.18
+2025,Nov,2025-11,Mexico,Retail,Furniture,38203,79,483.58
+2025,Nov,2025-11,UK,Wholesale,Office Supplies,35990,208,173.03
+2025,Nov,2025-11,Mexico,Wholesale,Electronics,30843,96,321.28
+2025,Nov,2025-11,UK,Wholesale,Accessories,29348,289,101.55
+2025,Nov,2025-11,Mexico,Retail,Office Supplies,28945,219,132.17
+2025,Nov,2025-11,Mexico,Wholesale,Furniture,27255,59,461.95
+2025,Nov,2025-11,Mexico,Online,Accessories,27006,356,75.86
+2025,Nov,2025-11,Mexico,Retail,Accessories,24572,311,79.01
+2025,Nov,2025-11,Canada,Wholesale,Accessories,21450,245,87.55
+2025,Nov,2025-11,Mexico,Wholesale,Office Supplies,20907,164,127.48
+2025,Nov,2025-11,Mexico,Wholesale,Accessories,16395,224,73.19
+2025,Oct,2025-10,US,Online,Electronics,154179,266,579.62
+2025,Oct,2025-10,US,Online,Furniture,116220,151,769.67
+2025,Oct,2025-10,UK,Online,Furniture,111166,138,805.55
+2025,Oct,2025-10,UK,Online,Electronics,107083,207,517.31
+2025,Oct,2025-10,US,Retail,Furniture,101144,129,784.06
+2025,Oct,2025-10,US,Retail,Electronics,99762,196,508.99
+2025,Oct,2025-10,US,Online,Office Supplies,89263,420,212.53
+2025,Oct,2025-10,Canada,Retail,Electronics,83581,166,503.5
+2025,Oct,2025-10,Canada,Online,Electronics,83218,181,459.77
+2025,Oct,2025-10,Canada,Online,Furniture,83125,118,704.45
+2025,Oct,2025-10,UK,Retail,Electronics,76294,160,476.84
+2025,Oct,2025-10,UK,Retail,Furniture,75776,104,728.62
+2025,Oct,2025-10,Canada,Online,Office Supplies,72044,349,206.43
+2025,Oct,2025-10,UK,Online,Accessories,62782,507,123.83
+2025,Oct,2025-10,UK,Online,Office Supplies,62727,329,190.66
+2025,Oct,2025-10,US,Retail,Office Supplies,58418,311,187.84
+2025,Oct,2025-10,US,Online,Accessories,58067,522,111.24
+2025,Oct,2025-10,UK,Wholesale,Electronics,57725,123,469.31
+2025,Oct,2025-10,Canada,Retail,Furniture,56568,89,635.6
+2025,Oct,2025-10,US,Wholesale,Electronics,56341,130,433.39
+2025,Oct,2025-10,UK,Wholesale,Furniture,55960,79,708.35
+2025,Oct,2025-10,Canada,Wholesale,Electronics,54521,118,462.04
+2025,Oct,2025-10,US,Wholesale,Furniture,53967,83,650.2
+2025,Oct,2025-10,Canada,Retail,Office Supplies,52487,273,192.26
+2025,Oct,2025-10,Mexico,Online,Electronics,50868,148,343.7
+2025,Oct,2025-10,Canada,Online,Accessories,49248,445,110.67
+2025,Oct,2025-10,Mexico,Retail,Electronics,46179,129,357.98
+2025,Oct,2025-10,UK,Retail,Office Supplies,45635,257,177.57
+2025,Oct,2025-10,Mexico,Online,Furniture,45426,91,499.19
+2025,Oct,2025-10,Canada,Wholesale,Furniture,42619,68,626.75
+2025,Oct,2025-10,US,Retail,Accessories,41299,403,102.48
+2025,Oct,2025-10,UK,Retail,Accessories,40691,374,108.8
+2025,Oct,2025-10,US,Wholesale,Office Supplies,39922,227,175.87
+2025,Oct,2025-10,Mexico,Retail,Furniture,39774,78,509.92
+2025,Oct,2025-10,Mexico,Online,Office Supplies,39739,271,146.64
+2025,Oct,2025-10,UK,Wholesale,Office Supplies,38165,207,184.37
+2025,Oct,2025-10,US,Wholesale,Accessories,33278,319,104.32
+2025,Oct,2025-10,Canada,Retail,Accessories,31586,326,96.89
+2025,Oct,2025-10,Canada,Wholesale,Office Supplies,31047,185,167.82
+2025,Oct,2025-10,Mexico,Wholesale,Electronics,29595,91,325.22
+2025,Oct,2025-10,Mexico,Retail,Office Supplies,28955,212,136.58
+2025,Oct,2025-10,Mexico,Online,Accessories,27093,345,78.53
+2025,Oct,2025-10,Mexico,Wholesale,Furniture,25470,55,463.09
+2025,Oct,2025-10,UK,Wholesale,Accessories,23969,253,94.74
+2025,Oct,2025-10,Canada,Wholesale,Accessories,20690,233,88.8
+2025,Oct,2025-10,Mexico,Wholesale,Office Supplies,18602,150,124.01
+2025,Oct,2025-10,Mexico,Retail,Accessories,17358,253,68.61
+2025,Oct,2025-10,Mexico,Wholesale,Accessories,15694,212,74.03
+2025,Sep,2025-09,US,Online,Furniture,129084,156,827.46
+2025,Sep,2025-09,UK,Online,Electronics,121737,217,561
+2025,Sep,2025-09,US,Online,Electronics,112390,223,503.99
+2025,Sep,2025-09,UK,Online,Furniture,97620,127,768.66
+2025,Sep,2025-09,US,Online,Office Supplies,95571,427,223.82
+2025,Sep,2025-09,Canada,Online,Furniture,92395,122,757.34
+2025,Sep,2025-09,Canada,Online,Electronics,89975,185,486.35
+2025,Sep,2025-09,US,Retail,Furniture,89064,119,748.44
+2025,Sep,2025-09,US,Retail,Electronics,80324,173,464.3
+2025,Sep,2025-09,UK,Retail,Electronics,78867,160,492.92
+2025,Sep,2025-09,UK,Online,Office Supplies,67764,336,201.68
+2025,Sep,2025-09,UK,Retail,Furniture,66665,96,694.43
+2025,Sep,2025-09,US,Online,Accessories,66539,549,121.2
+2025,Sep,2025-09,Canada,Retail,Electronics,64107,143,448.3
+2025,Sep,2025-09,Canada,Retail,Furniture,63706,93,685.01
+2025,Sep,2025-09,US,Retail,Office Supplies,62905,317,198.44
+2025,Sep,2025-09,Canada,Online,Office Supplies,58432,309,189.1
+2025,Sep,2025-09,UK,Wholesale,Electronics,56984,120,474.87
+2025,Sep,2025-09,US,Wholesale,Electronics,55822,127,439.54
+2025,Sep,2025-09,Mexico,Online,Electronics,54827,151,363.09
+2025,Sep,2025-09,Canada,Online,Accessories,52505,451,116.42
+2025,Sep,2025-09,Mexico,Online,Furniture,51110,95,538
+2025,Sep,2025-09,UK,Wholesale,Furniture,51037,74,689.69
+2025,Sep,2025-09,Canada,Wholesale,Electronics,49936,111,449.87
+2025,Sep,2025-09,US,Wholesale,Furniture,49258,78,631.51
+2025,Sep,2025-09,UK,Retail,Office Supplies,49214,262,187.84
+2025,Sep,2025-09,UK,Online,Accessories,45927,426,107.81
+2025,Sep,2025-09,US,Retail,Accessories,42787,403,106.17
+2025,Sep,2025-09,Canada,Retail,Office Supplies,42445,241,176.12
+2025,Sep,2025-09,Canada,Wholesale,Furniture,36225,62,584.28
+2025,Sep,2025-09,US,Wholesale,Office Supplies,36214,212,170.82
+2025,Sep,2025-09,Mexico,Retail,Electronics,35262,111,317.68
+2025,Sep,2025-09,Mexico,Retail,Furniture,35006,72,486.19
+2025,Sep,2025-09,UK,Wholesale,Office Supplies,34979,195,179.38
+2025,Sep,2025-09,Canada,Retail,Accessories,34063,333,102.29
+2025,Sep,2025-09,US,Wholesale,Accessories,32947,312,105.6
+2025,Sep,2025-09,UK,Retail,Accessories,32683,329,99.34
+2025,Sep,2025-09,Mexico,Online,Office Supplies,32026,239,134
+2025,Sep,2025-09,Mexico,Retail,Office Supplies,29730,211,140.9
+2025,Sep,2025-09,Canada,Wholesale,Office Supplies,29478,177,166.54
+2025,Sep,2025-09,Mexico,Online,Accessories,29045,351,82.75
+2025,Sep,2025-09,Mexico,Wholesale,Electronics,27212,86,316.42
+2025,Sep,2025-09,UK,Wholesale,Accessories,23717,247,96.02
+2025,Sep,2025-09,Mexico,Wholesale,Furniture,21599,50,431.98
+2025,Sep,2025-09,Canada,Wholesale,Accessories,18798,218,86.23
+2025,Sep,2025-09,Mexico,Retail,Accessories,18726,258,72.58
+2025,Sep,2025-09,Mexico,Wholesale,Office Supplies,15892,136,116.85
+2025,Sep,2025-09,Mexico,Wholesale,Accessories,14344,199,72.08
+2025,Aug,2025-08,US,Online,Electronics,133988,237,565.35
+2025,Aug,2025-08,US,Online,Furniture,114031,143,797.42
+2025,Aug,2025-08,UK,Online,Electronics,102903,194,530.43
+2025,Aug,2025-08,US,Retail,Electronics,95433,183,521.49
+2025,Aug,2025-08,Canada,Online,Electronics,90452,180,502.51
+2025,Aug,2025-08,US,Retail,Furniture,77829,108,720.64
+2025,Aug,2025-08,UK,Online,Furniture,76490,109,701.74
+2025,Aug,2025-08,UK,Retail,Furniture,74551,99,753.04
+2025,Aug,2025-08,Canada,Online,Furniture,69219,103,672.03
+2025,Aug,2025-08,UK,Online,Office Supplies,68349,328,208.38
+2025,Aug,2025-08,US,Online,Office Supplies,68213,351,194.34
+2025,Aug,2025-08,UK,Retail,Electronics,66449,143,464.68
+2025,Aug,2025-08,Canada,Retail,Furniture,66253,92,720.14
+2025,Aug,2025-08,Canada,Retail,Electronics,64875,140,463.39
+2025,Aug,2025-08,US,Retail,Office Supplies,63510,310,204.87
+2025,Aug,2025-08,Canada,Online,Office Supplies,59029,302,195.46
+2025,Aug,2025-08,US,Wholesale,Furniture,56277,81,694.78
+2025,Aug,2025-08,US,Online,Accessories,56012,490,114.31
+2025,Aug,2025-08,Mexico,Online,Electronics,55104,147,374.86
+2025,Aug,2025-08,UK,Online,Accessories,54597,452,120.79
+2025,Aug,2025-08,Mexico,Online,Furniture,53730,95,565.58
+2025,Aug,2025-08,US,Wholesale,Electronics,50915,118,431.48
+2025,Aug,2025-08,US,Retail,Accessories,50553,426,118.67
+2025,Aug,2025-08,UK,Retail,Office Supplies,49684,256,194.08
+2025,Aug,2025-08,Canada,Wholesale,Electronics,48230,106,455
+2025,Aug,2025-08,UK,Wholesale,Electronics,47067,106,444.03
+2025,Aug,2025-08,UK,Wholesale,Furniture,45644,68,671.23
+2025,Aug,2025-08,UK,Retail,Accessories,38889,349,111.43
+2025,Aug,2025-08,Canada,Retail,Office Supplies,38741,224,172.95
+2025,Aug,2025-08,Canada,Online,Accessories,37706,372,101.36
+2025,Aug,2025-08,Mexico,Retail,Furniture,36864,72,512
+2025,Aug,2025-08,Mexico,Retail,Electronics,35510,108,328.8
+2025,Aug,2025-08,US,Wholesale,Office Supplies,35331,204,173.19
+2025,Aug,2025-08,Canada,Retail,Accessories,34310,325,105.57
+2025,Aug,2025-08,Canada,Wholesale,Furniture,33990,58,586.03
+2025,Aug,2025-08,UK,Wholesale,Office Supplies,33770,186,181.56
+2025,Aug,2025-08,Mexico,Online,Office Supplies,29202,222,131.54
+2025,Aug,2025-08,Mexico,Online,Accessories,29173,342,85.3
+2025,Aug,2025-08,UK,Wholesale,Accessories,27506,259,106.2
+2025,Aug,2025-08,US,Wholesale,Accessories,27121,275,98.62
+2025,Aug,2025-08,Mexico,Wholesale,Electronics,26262,82,320.27
+2025,Aug,2025-08,Canada,Wholesale,Office Supplies,23786,155,153.46
+2025,Aug,2025-08,Mexico,Retail,Office Supplies,21317,174,122.51
+2025,Aug,2025-08,Mexico,Retail,Accessories,20856,265,78.7
+2025,Aug,2025-08,Mexico,Wholesale,Furniture,20362,47,433.23
+2025,Aug,2025-08,Canada,Wholesale,Accessories,20273,220,92.15
+2025,Aug,2025-08,Mexico,Wholesale,Office Supplies,18089,141,128.29
+2025,Aug,2025-08,Mexico,Wholesale,Accessories,13926,191,72.91
+2025,Jul,2025-07,US,Online,Electronics,122822,230,534.01
+2025,Jul,2025-07,US,Online,Furniture,108253,141,767.75
+2025,Jul,2025-07,UK,Online,Furniture,102691,128,802.27
+2025,Jul,2025-07,UK,Online,Electronics,94051,188,500.27
+2025,Jul,2025-07,US,Retail,Furniture,93688,120,780.73
+2025,Jul,2025-07,US,Retail,Electronics,87637,178,492.34
+2025,Jul,2025-07,UK,Retail,Electronics,85170,164,519.33
+2025,Jul,2025-07,Canada,Online,Furniture,78794,111,709.86
+2025,Jul,2025-07,Canada,Online,Electronics,77593,169,459.13
+2025,Jul,2025-07,US,Online,Office Supplies,75089,373,201.31
+2025,Jul,2025-07,UK,Retail,Furniture,71155,98,726.07
+2025,Jul,2025-07,Canada,Retail,Electronics,70774,148,478.2
+2025,Jul,2025-07,US,Retail,Office Supplies,69267,328,211.18
+2025,Jul,2025-07,US,Wholesale,Electronics,64710,135,479.33
+2025,Jul,2025-07,Mexico,Online,Electronics,60278,156,386.4
+2025,Jul,2025-07,UK,Online,Office Supplies,58640,308,190.39
+2025,Jul,2025-07,Canada,Online,Office Supplies,58371,304,192.01
+2025,Jul,2025-07,US,Wholesale,Furniture,54747,81,675.89
+2025,Jul,2025-07,UK,Retail,Office Supplies,54457,272,200.21
+2025,Jul,2025-07,Canada,Retail,Furniture,53852,84,641.1
+2025,Jul,2025-07,US,Online,Accessories,50857,473,107.52
+2025,Jul,2025-07,UK,Online,Accessories,49998,438,114.15
+2025,Jul,2025-07,UK,Wholesale,Electronics,46663,107,436.1
+2025,Jul,2025-07,US,Retail,Accessories,46472,414,112.25
+2025,Jul,2025-07,Canada,Wholesale,Furniture,45010,68,661.91
+2025,Jul,2025-07,Mexico,Online,Furniture,43302,86,503.51
+2025,Jul,2025-07,Canada,Retail,Office Supplies,42562,238,178.83
+2025,Jul,2025-07,Canada,Online,Accessories,41436,395,104.9
+2025,Jul,2025-07,UK,Wholesale,Furniture,40321,65,620.33
+2025,Jul,2025-07,Mexico,Retail,Electronics,39067,115,339.71
+2025,Jul,2025-07,US,Wholesale,Office Supplies,37208,212,175.51
+2025,Jul,2025-07,Canada,Wholesale,Electronics,36046,93,387.59
+2025,Jul,2025-07,UK,Retail,Accessories,35680,339,105.25
+2025,Jul,2025-07,UK,Wholesale,Office Supplies,35636,194,183.69
+2025,Jul,2025-07,US,Wholesale,Accessories,34139,313,109.07
+2025,Jul,2025-07,Mexico,Online,Office Supplies,32143,236,136.2
+2025,Jul,2025-07,Canada,Wholesale,Office Supplies,29575,175,169
+2025,Jul,2025-07,Mexico,Retail,Furniture,29530,65,454.3
+2025,Jul,2025-07,Mexico,Wholesale,Electronics,27542,85,324.02
+2025,Jul,2025-07,Canada,Retail,Accessories,26490,289,91.66
+2025,Jul,2025-07,UK,Wholesale,Accessories,24768,249,99.47
+2025,Jul,2025-07,Mexico,Retail,Office Supplies,23467,185,126.85
+2025,Jul,2025-07,Mexico,Online,Accessories,22754,306,74.36
+2025,Jul,2025-07,Canada,Wholesale,Accessories,21366,229,93.3
+2025,Jul,2025-07,Mexico,Wholesale,Furniture,18942,46,411.78
+2025,Jul,2025-07,Mexico,Retail,Accessories,16239,237,68.52
+2025,Jul,2025-07,Mexico,Wholesale,Office Supplies,15910,134,118.73
+2025,Jul,2025-07,Mexico,Wholesale,Accessories,10371,167,62.1
+2025,Jun,2025-06,US,Online,Furniture,130580,157,831.72
+2025,Jun,2025-06,US,Online,Electronics,111684,222,503.08
+2025,Jun,2025-06,UK,Online,Furniture,98233,127,773.49
+2025,Jun,2025-06,Canada,Online,Furniture,89641,120,747.01
+2025,Jun,2025-06,US,Retail,Furniture,89597,119,752.92
+2025,Jun,2025-06,Canada,Online,Electronics,85525,180,475.14
+2025,Jun,2025-06,UK,Online,Electronics,85164,181,470.52
+2025,Jun,2025-06,US,Online,Office Supplies,82427,396,208.15
+2025,Jun,2025-06,US,Retail,Electronics,79734,172,463.57
+2025,Jun,2025-06,UK,Retail,Electronics,78101,159,491.2
+2025,Jun,2025-06,UK,Retail,Furniture,67144,96,699.42
+2025,Jun,2025-06,US,Online,Accessories,65809,545,120.75
+2025,Jun,2025-06,UK,Online,Office Supplies,64429,327,197.03
+2025,Jun,2025-06,Canada,Online,Office Supplies,64022,323,198.21
+2025,Jun,2025-06,Canada,Retail,Furniture,61503,91,675.86
+2025,Jun,2025-06,US,Retail,Office Supplies,59906,309,193.87
+2025,Jun,2025-06,US,Wholesale,Electronics,57778,129,447.89
+2025,Jun,2025-06,Canada,Retail,Electronics,54801,132,415.16
+2025,Jun,2025-06,Mexico,Online,Furniture,49896,94,530.81
+2025,Jun,2025-06,UK,Wholesale,Furniture,49660,73,680.28
+2025,Jun,2025-06,US,Wholesale,Furniture,48023,77,623.68
+2025,Jun,2025-06,Mexico,Online,Electronics,46817,139,336.81
+2025,Jun,2025-06,UK,Online,Accessories,45622,424,107.6
+2025,Jun,2025-06,Canada,Online,Accessories,45407,419,108.37
+2025,Jun,2025-06,US,Retail,Accessories,42470,401,105.91
+2025,Jun,2025-06,Canada,Retail,Office Supplies,42156,240,175.65
+2025,Jun,2025-06,UK,Retail,Office Supplies,42120,242,174.05
+2025,Jun,2025-06,UK,Wholesale,Electronics,41406,102,405.94
+2025,Jun,2025-06,US,Wholesale,Office Supplies,39109,220,177.77
+2025,Jun,2025-06,Canada,Wholesale,Electronics,38123,97,393.02
+2025,Jun,2025-06,UK,Wholesale,Office Supplies,37338,201,185.76
+2025,Jun,2025-06,Mexico,Online,Office Supplies,35331,251,140.76
+2025,Jun,2025-06,Mexico,Retail,Furniture,34069,71,479.84
+2025,Jun,2025-06,Mexico,Retail,Electronics,33519,108,310.36
+2025,Jun,2025-06,Canada,Wholesale,Furniture,32954,59,558.55
+2025,Jun,2025-06,UK,Retail,Accessories,32524,328,99.16
+2025,Jun,2025-06,Canada,Retail,Accessories,32377,324,99.93
+2025,Jun,2025-06,US,Wholesale,Accessories,30747,301,102.15
+2025,Jun,2025-06,Mexico,Wholesale,Electronics,28836,88,327.68
+2025,Jun,2025-06,Canada,Wholesale,Office Supplies,25906,166,156.06
+2025,Jun,2025-06,Mexico,Online,Accessories,24999,325,76.92
+2025,Jun,2025-06,Mexico,Retail,Office Supplies,23166,186,124.55
+2025,Jun,2025-06,Canada,Wholesale,Accessories,22472,238,94.42
+2025,Jun,2025-06,UK,Wholesale,Accessories,22094,238,92.83
+2025,Jun,2025-06,Mexico,Wholesale,Furniture,19414,47,413.06
+2025,Jun,2025-06,Mexico,Retail,Accessories,17798,251,70.91
+2025,Jun,2025-06,Mexico,Wholesale,Office Supplies,15460,134,115.37
+2025,Jun,2025-06,Mexico,Wholesale,Accessories,12144,183,66.36
+2025,May,2025-05,US,Online,Electronics,137335,244,562.85
+2025,May,2025-05,US,Online,Furniture,118703,148,802.05
+2025,May,2025-05,UK,Online,Electronics,105676,200,528.38
+2025,May,2025-05,US,Retail,Electronics,98144,189,519.28
+2025,May,2025-05,Canada,Online,Electronics,89335,182,490.85
+2025,May,2025-05,US,Online,Office Supplies,86159,401,214.86
+2025,May,2025-05,US,Retail,Furniture,81252,112,725.46
+2025,May,2025-05,UK,Online,Furniture,80689,114,707.8
+2025,May,2025-05,Canada,Online,Furniture,69666,105,663.49
+2025,May,2025-05,UK,Retail,Electronics,68127,147,463.45
+2025,May,2025-05,UK,Online,Office Supplies,67375,331,203.55
+2025,May,2025-05,US,Retail,Office Supplies,62638,313,200.12
+2025,May,2025-05,Canada,Online,Office Supplies,60564,311,194.74
+2025,May,2025-05,Canada,Retail,Electronics,57621,134,430.01
+2025,May,2025-05,US,Online,Accessories,57565,505,113.99
+2025,May,2025-05,UK,Online,Accessories,55912,465,120.24
+2025,May,2025-05,UK,Retail,Furniture,54903,86,638.41
+2025,May,2025-05,UK,Wholesale,Electronics,50109,111,451.43
+2025,May,2025-05,US,Wholesale,Electronics,49192,118,416.88
+2025,May,2025-05,Mexico,Online,Electronics,49122,141,348.38
+2025,May,2025-05,Canada,Online,Accessories,47395,424,111.78
+2025,May,2025-05,Canada,Retail,Furniture,47261,79,598.24
+2025,May,2025-05,UK,Wholesale,Furniture,46346,70,662.08
+2025,May,2025-05,UK,Retail,Office Supplies,44327,246,180.19
+2025,May,2025-05,US,Wholesale,Furniture,44199,73,605.47
+2025,May,2025-05,Canada,Retail,Office Supplies,44075,243,181.38
+2025,May,2025-05,Canada,Wholesale,Furniture,41166,65,633.32
+2025,May,2025-05,UK,Retail,Accessories,39938,360,110.94
+2025,May,2025-05,US,Wholesale,Office Supplies,39413,219,179.97
+2025,May,2025-05,Canada,Wholesale,Electronics,38239,96,398.32
+2025,May,2025-05,Mexico,Online,Furniture,38057,81,469.84
+2025,May,2025-05,US,Retail,Accessories,36874,370,99.66
+2025,May,2025-05,Mexico,Retail,Furniture,36859,73,504.92
+2025,May,2025-05,Mexico,Retail,Electronics,35006,109,321.16
+2025,May,2025-05,Canada,Retail,Accessories,33823,328,103.12
+2025,May,2025-05,Mexico,Online,Office Supplies,33321,241,138.26
+2025,May,2025-05,Mexico,Online,Accessories,28745,345,83.32
+2025,May,2025-05,UK,Wholesale,Accessories,26615,259,102.76
+2025,May,2025-05,UK,Wholesale,Office Supplies,26581,168,158.22
+2025,May,2025-05,US,Wholesale,Accessories,26216,275,95.33
+2025,May,2025-05,Mexico,Wholesale,Furniture,24789,53,467.72
+2025,May,2025-05,Mexico,Retail,Office Supplies,24338,189,128.77
+2025,May,2025-05,Canada,Wholesale,Office Supplies,23943,158,151.54
+2025,May,2025-05,Canada,Wholesale,Accessories,22543,236,95.52
+2025,May,2025-05,Mexico,Wholesale,Electronics,20653,74,279.1
+2025,May,2025-05,Mexico,Retail,Accessories,18679,255,73.25
+2025,May,2025-05,Mexico,Wholesale,Office Supplies,18217,144,126.51
+2025,May,2025-05,Mexico,Wholesale,Accessories,12227,182,67.18
+2025,Apr,2025-04,US,Online,Electronics,118115,222,532.05
+2025,Apr,2025-04,US,Online,Furniture,105865,137,772.74
+2025,Apr,2025-04,Canada,Online,Electronics,91631,181,506.25
+2025,Apr,2025-04,UK,Online,Electronics,90274,181,498.75
+2025,Apr,2025-04,US,Online,Office Supplies,87912,397,221.44
+2025,Apr,2025-04,US,Retail,Electronics,83898,171,490.63
+2025,Apr,2025-04,Canada,Online,Furniture,74227,106,700.25
+2025,Apr,2025-04,UK,Online,Furniture,71402,105,680.02
+2025,Apr,2025-04,UK,Retail,Furniture,69325,95,729.74
+2025,Apr,2025-04,UK,Online,Office Supplies,68857,328,209.93
+2025,Apr,2025-04,US,Retail,Furniture,65607,99,662.7
+2025,Apr,2025-04,Canada,Retail,Electronics,65383,140,467.02
+2025,Apr,2025-04,US,Retail,Office Supplies,63934,310,206.24
+2025,Apr,2025-04,Canada,Online,Office Supplies,61840,308,200.78
+2025,Apr,2025-04,US,Wholesale,Electronics,58410,126,463.57
+2025,Apr,2025-04,UK,Retail,Electronics,57999,133,436.08
+2025,Apr,2025-04,US,Wholesale,Furniture,51334,77,666.68
+2025,Apr,2025-04,Canada,Retail,Furniture,51243,81,632.63
+2025,Apr,2025-04,Mexico,Online,Electronics,50362,140,359.73
+2025,Apr,2025-04,UK,Retail,Office Supplies,50251,257,195.53
+2025,Apr,2025-04,US,Online,Accessories,49041,457,107.31
+2025,Apr,2025-04,UK,Online,Accessories,47986,422,113.71
+2025,Apr,2025-04,US,Retail,Accessories,44596,399,111.77
+2025,Apr,2025-04,UK,Wholesale,Electronics,42151,100,421.51
+2025,Apr,2025-04,Mexico,Online,Furniture,41239,83,496.86
+2025,Apr,2025-04,Canada,Retail,Office Supplies,40803,229,178.18
+2025,Apr,2025-04,Canada,Wholesale,Furniture,39964,63,634.35
+2025,Apr,2025-04,US,Wholesale,Office Supplies,38792,213,182.12
+2025,Apr,2025-04,UK,Wholesale,Furniture,37956,62,612.19
+2025,Apr,2025-04,Canada,Wholesale,Electronics,37928,94,403.49
+2025,Apr,2025-04,Mexico,Retail,Electronics,36162,109,331.76
+2025,Apr,2025-04,Canada,Online,Accessories,34395,354,97.16
+2025,Apr,2025-04,UK,Retail,Accessories,34292,327,104.87
+2025,Apr,2025-04,Mexico,Online,Office Supplies,34108,239,142.71
+2025,Apr,2025-04,US,Wholesale,Accessories,30920,293,105.53
+2025,Apr,2025-04,Mexico,Retail,Furniture,28252,63,448.45
+2025,Apr,2025-04,Canada,Wholesale,Office Supplies,27836,167,166.68
+2025,Apr,2025-04,UK,Wholesale,Office Supplies,26309,164,160.42
+2025,Apr,2025-04,Canada,Retail,Accessories,24526,274,89.51
+2025,Apr,2025-04,Mexico,Wholesale,Furniture,23890,51,468.43
+2025,Apr,2025-04,Mexico,Retail,Office Supplies,22510,178,126.46
+2025,Apr,2025-04,UK,Wholesale,Accessories,22410,233,96.18
+2025,Apr,2025-04,Canada,Wholesale,Accessories,22117,229,96.58
+2025,Apr,2025-04,Mexico,Online,Accessories,20987,289,72.62
+2025,Apr,2025-04,Mexico,Wholesale,Electronics,20374,72,282.97
+2025,Apr,2025-04,Mexico,Retail,Accessories,19039,252,75.55
+2025,Apr,2025-04,Mexico,Wholesale,Office Supplies,14994,128,117.14
+2025,Apr,2025-04,Mexico,Wholesale,Accessories,12032,177,67.98
+2025,Mar,2025-03,US,Online,Electronics,102341,204,501.67
+2025,Mar,2025-03,UK,Online,Furniture,91716,118,777.25
+2025,Mar,2025-03,US,Online,Furniture,86820,123,705.85
+2025,Mar,2025-03,US,Retail,Furniture,83202,110,756.38
+2025,Mar,2025-03,Canada,Online,Furniture,80997,110,736.34
+2025,Mar,2025-03,UK,Online,Electronics,78410,167,469.52
+2025,Mar,2025-03,US,Retail,Electronics,73056,158,462.38
+2025,Mar,2025-03,US,Online,Office Supplies,72357,356,203.25
+2025,Mar,2025-03,UK,Retail,Electronics,71397,146,489.02
+2025,Mar,2025-03,Canada,Online,Electronics,67765,154,440.03
+2025,Mar,2025-03,US,Online,Accessories,60215,501,120.19
+2025,Mar,2025-03,Canada,Online,Office Supplies,58401,296,197.3
+2025,Mar,2025-03,UK,Retail,Furniture,56888,85,669.27
+2025,Mar,2025-03,Canada,Retail,Furniture,55311,83,666.4
+2025,Mar,2025-03,UK,Online,Office Supplies,50909,279,182.47
+2025,Mar,2025-03,UK,Wholesale,Electronics,50334,108,466.06
+2025,Mar,2025-03,US,Wholesale,Electronics,49774,115,432.82
+2025,Mar,2025-03,Canada,Retail,Electronics,48240,119,405.38
+2025,Mar,2025-03,US,Retail,Office Supplies,47451,264,179.74
+2025,Mar,2025-03,US,Wholesale,Furniture,47323,73,648.26
+2025,Mar,2025-03,Mexico,Online,Furniture,44487,85,523.38
+2025,Mar,2025-03,Canada,Retail,Office Supplies,42449,231,183.76
+2025,Mar,2025-03,UK,Online,Accessories,41835,390,107.27
+2025,Mar,2025-03,Mexico,Online,Electronics,41438,126,328.87
+2025,Mar,2025-03,Canada,Online,Accessories,39894,377,105.82
+2025,Mar,2025-03,Canada,Wholesale,Furniture,39387,62,635.28
+2025,Mar,2025-03,US,Retail,Accessories,38948,369,105.55
+2025,Mar,2025-03,Canada,Wholesale,Electronics,37992,93,408.52
+2025,Mar,2025-03,Mexico,Retail,Electronics,37635,110,342.14
+2025,Mar,2025-03,UK,Retail,Office Supplies,37049,218,169.95
+2025,Mar,2025-03,UK,Wholesale,Furniture,35084,59,594.65
+2025,Mar,2025-03,Mexico,Online,Office Supplies,32244,230,140.19
+2025,Mar,2025-03,Mexico,Retail,Furniture,30762,65,473.26
+2025,Mar,2025-03,US,Wholesale,Office Supplies,30309,186,162.95
+2025,Mar,2025-03,UK,Retail,Accessories,29862,302,98.88
+2025,Mar,2025-03,US,Wholesale,Accessories,29243,282,103.7
+2025,Mar,2025-03,UK,Wholesale,Office Supplies,26335,162,162.56
+2025,Mar,2025-03,Canada,Retail,Accessories,25678,277,92.7
+2025,Mar,2025-03,Mexico,Retail,Office Supplies,23503,180,130.57
+2025,Mar,2025-03,Mexico,Wholesale,Furniture,23454,50,469.08
+2025,Mar,2025-03,Canada,Wholesale,Office Supplies,23254,151,154
+2025,Mar,2025-03,Mexico,Online,Accessories,22004,293,75.1
+2025,Mar,2025-03,Mexico,Wholesale,Electronics,20359,71,286.75
+2025,Mar,2025-03,UK,Wholesale,Accessories,19104,213,89.69
+2025,Mar,2025-03,Canada,Wholesale,Accessories,15710,191,82.25
+2025,Mar,2025-03,Mexico,Retail,Accessories,15648,226,69.24
+2025,Mar,2025-03,Mexico,Wholesale,Office Supplies,12518,116,107.91
+2025,Mar,2025-03,Mexico,Wholesale,Accessories,12033,175,68.76
+2025,Feb,2025-02,US,Online,Furniture,110364,137,805.58
+2025,Feb,2025-02,UK,Online,Electronics,96229,183,525.84
+2025,Feb,2025-02,US,Retail,Electronics,89370,173,516.59
+2025,Feb,2025-02,US,Online,Electronics,88683,188,471.72
+2025,Feb,2025-02,US,Retail,Furniture,75842,104,729.25
+2025,Feb,2025-02,UK,Online,Furniture,75558,106,712.81
+2025,Feb,2025-02,US,Online,Office Supplies,75514,360,209.76
+2025,Feb,2025-02,Canada,Online,Electronics,70596,155,455.46
+2025,Feb,2025-02,UK,Retail,Electronics,62339,135,461.77
+2025,Feb,2025-02,Canada,Online,Furniture,62189,95,654.62
+2025,Feb,2025-02,US,Wholesale,Electronics,59338,124,478.53
+2025,Feb,2025-02,UK,Online,Office Supplies,53450,283,188.87
+2025,Feb,2025-02,US,Online,Accessories,52460,462,113.55
+2025,Feb,2025-02,UK,Retail,Furniture,51485,80,643.56
+2025,Feb,2025-02,Canada,Retail,Electronics,50375,120,419.79
+2025,Feb,2025-02,US,Retail,Office Supplies,49630,267,185.88
+2025,Feb,2025-02,Canada,Online,Office Supplies,43213,252,171.48
+2025,Feb,2025-02,UK,Wholesale,Electronics,43202,99,436.38
+2025,Feb,2025-02,Mexico,Online,Electronics,43193,127,340.1
+2025,Feb,2025-02,Canada,Retail,Furniture,42512,72,590.44
+2025,Feb,2025-02,Canada,Online,Accessories,41466,380,109.12
+2025,Feb,2025-02,UK,Wholesale,Furniture,41115,63,652.62
+2025,Feb,2025-02,US,Wholesale,Furniture,39440,66,597.58
+2025,Feb,2025-02,UK,Retail,Office Supplies,38876,221,175.91
+2025,Feb,2025-02,Canada,Wholesale,Electronics,38035,92,413.42
+2025,Feb,2025-02,UK,Online,Accessories,36230,359,100.92
+2025,Feb,2025-02,Canada,Wholesale,Furniture,35170,58,606.38
+2025,Feb,2025-02,Mexico,Online,Furniture,34315,74,463.72
+2025,Feb,2025-02,US,Retail,Accessories,33799,340,99.41
+2025,Feb,2025-02,Mexico,Online,Office Supplies,33529,232,144.52
+2025,Feb,2025-02,Mexico,Retail,Furniture,32843,66,497.62
+2025,Feb,2025-02,Canada,Retail,Office Supplies,31463,197,159.71
+2025,Feb,2025-02,US,Wholesale,Office Supplies,30553,185,165.15
+2025,Feb,2025-02,Mexico,Retail,Electronics,27655,93,297.37
+2025,Feb,2025-02,Canada,Retail,Accessories,26832,280,95.83
+2025,Feb,2025-02,UK,Wholesale,Office Supplies,26509,161,164.65
+2025,Feb,2025-02,UK,Retail,Accessories,25755,277,92.98
+2025,Feb,2025-02,US,Wholesale,Accessories,25021,258,96.98
+2025,Feb,2025-02,Mexico,Online,Accessories,22952,296,77.54
+2025,Feb,2025-02,Mexico,Retail,Office Supplies,22187,173,128.25
+2025,Feb,2025-02,Canada,Wholesale,Office Supplies,21386,143,149.55
+2025,Feb,2025-02,Mexico,Wholesale,Electronics,20621,71,290.43
+2025,Feb,2025-02,Mexico,Wholesale,Furniture,20604,46,447.91
+2025,Feb,2025-02,UK,Wholesale,Accessories,17956,204,88.02
+2025,Feb,2025-02,Mexico,Retail,Accessories,16376,229,71.51
+2025,Feb,2025-02,Mexico,Wholesale,Office Supplies,16333,131,124.68
+2025,Feb,2025-02,Canada,Wholesale,Accessories,15842,190,83.38
+2025,Feb,2025-02,Mexico,Wholesale,Accessories,12027,173,69.52
+2025,Jan,2025-01,US,Online,Electronics,109096,206,529.59
+2025,Jan,2025-01,US,Online,Furniture,90934,123,739.3
+2025,Jan,2025-01,UK,Online,Electronics,83949,169,496.74
+2025,Jan,2025-01,Canada,Online,Electronics,81530,165,494.12
+2025,Jan,2025-01,US,Online,Office Supplies,78239,362,216.13
+2025,Jan,2025-01,US,Retail,Electronics,78154,160,488.46
+2025,Jan,2025-01,UK,Online,Furniture,67853,99,685.38
+2025,Jan,2025-01,Canada,Online,Furniture,67651,98,690.32
+2025,Jan,2025-01,US,Retail,Furniture,62096,93,667.7
+2025,Jan,2025-01,UK,Online,Office Supplies,61470,300,204.9
+2025,Jan,2025-01,US,Retail,Office Supplies,56968,283,201.3
+2025,Jan,2025-01,US,Wholesale,Electronics,55955,119,470.21
+2025,Jan,2025-01,UK,Retail,Electronics,53926,124,434.89
+2025,Jan,2025-01,Canada,Retail,Electronics,52503,121,433.91
+2025,Jan,2025-01,US,Wholesale,Furniture,51703,75,689.37
+2025,Jan,2025-01,UK,Retail,Furniture,46363,75,618.18
+2025,Jan,2025-01,Canada,Retail,Furniture,46164,74,623.84
+2025,Jan,2025-01,US,Online,Accessories,45582,426,107
+2025,Jan,2025-01,Canada,Online,Office Supplies,45257,255,177.48
+2025,Jan,2025-01,Mexico,Online,Electronics,44942,128,351.11
+2025,Jan,2025-01,UK,Online,Accessories,44472,393,113.16
+2025,Jan,2025-01,US,Retail,Accessories,41251,371,111.19
+2025,Jan,2025-01,UK,Retail,Office Supplies,40530,223,181.75
+2025,Jan,2025-01,UK,Wholesale,Furniture,38093,60,634.88
+2025,Jan,2025-01,Canada,Wholesale,Electronics,38054,91,418.18
+2025,Jan,2025-01,Mexico,Online,Furniture,37236,76,489.95
+2025,Jan,2025-01,UK,Wholesale,Electronics,36642,90,407.13
+2025,Jan,2025-01,Canada,Wholesale,Furniture,34012,56,607.36
+2025,Jan,2025-01,Mexico,Retail,Electronics,32057,99,323.81
+2025,Jan,2025-01,UK,Retail,Accessories,31732,304,104.38
+2025,Jan,2025-01,Mexico,Online,Office Supplies,31664,223,141.99
+2025,Jan,2025-01,Canada,Online,Accessories,30633,323,94.84
+2025,Jan,2025-01,US,Wholesale,Office Supplies,30616,183,167.3
+2025,Jan,2025-01,Canada,Retail,Office Supplies,29614,189,156.69
+2025,Jan,2025-01,Canada,Retail,Accessories,27986,283,98.89
+2025,Jan,2025-01,UK,Wholesale,Office Supplies,26502,159,166.68
+2025,Jan,2025-01,Mexico,Retail,Furniture,25657,58,442.36
+2025,Jan,2025-01,Canada,Wholesale,Office Supplies,25301,154,164.29
+2025,Jan,2025-01,Mexico,Online,Accessories,23819,298,79.93
+2025,Jan,2025-01,Mexico,Retail,Office Supplies,23012,174,132.25
+2025,Jan,2025-01,UK,Wholesale,Accessories,21576,221,97.63
+2025,Jan,2025-01,US,Wholesale,Accessories,21147,234,90.37
+2025,Jan,2025-01,Mexico,Wholesale,Electronics,20581,70,294.01
+2025,Jan,2025-01,Mexico,Wholesale,Furniture,20187,45,448.59
+2025,Jan,2025-01,Mexico,Retail,Accessories,16960,230,73.74
+2025,Jan,2025-01,Canada,Wholesale,Accessories,15884,188,84.49
+2025,Jan,2025-01,Mexico,Wholesale,Office Supplies,13630,118,115.51
+2025,Jan,2025-01,Mexico,Wholesale,Accessories,8525,144,59.2
+2024,Dec,2024-12,UK,Online,Electronics,132996,241,551.85
+2024,Dec,2024-12,US,Online,Furniture,130703,167,782.65
+2024,Dec,2024-12,US,Online,Electronics,122951,248,495.77
+2024,Dec,2024-12,US,Retail,Electronics,112178,217,516.95
+2024,Dec,2024-12,Canada,Online,Electronics,108663,216,503.07
+2024,Dec,2024-12,US,Online,Office Supplies,104581,475,220.17
+2024,Dec,2024-12,Canada,Online,Furniture,97907,134,730.65
+2024,Dec,2024-12,US,Retail,Furniture,89798,127,707.07
+2024,Dec,2024-12,UK,Online,Furniture,88073,128,688.07
+2024,Dec,2024-12,UK,Retail,Electronics,86309,178,484.88
+2024,Dec,2024-12,UK,Retail,Furniture,85775,116,739.44
+2024,Dec,2024-12,UK,Online,Office Supplies,81988,393,208.62
+2024,Dec,2024-12,US,Retail,Office Supplies,76077,371,205.06
+2024,Dec,2024-12,US,Wholesale,Furniture,72973,101,722.5
+2024,Dec,2024-12,Canada,Retail,Electronics,70117,159,440.99
+2024,Dec,2024-12,Canada,Retail,Furniture,66711,101,660.5
+2024,Dec,2024-12,US,Online,Accessories,65726,580,113.32
+2024,Dec,2024-12,Canada,Online,Office Supplies,61196,336,182.13
+2024,Dec,2024-12,UK,Wholesale,Electronics,60016,131,458.14
+2024,Dec,2024-12,Mexico,Online,Electronics,60005,168,357.17
+2024,Dec,2024-12,US,Wholesale,Electronics,58384,138,423.07
+2024,Dec,2024-12,Canada,Online,Accessories,57489,502,114.52
+2024,Dec,2024-12,Canada,Wholesale,Electronics,54874,124,442.53
+2024,Dec,2024-12,UK,Retail,Office Supplies,53953,292,184.77
+2024,Dec,2024-12,UK,Wholesale,Furniture,53897,81,665.39
+2024,Dec,2024-12,UK,Online,Accessories,50272,474,106.06
+2024,Dec,2024-12,Mexico,Online,Furniture,48761,99,492.54
+2024,Dec,2024-12,US,Retail,Accessories,46894,449,104.44
+2024,Dec,2024-12,Canada,Wholesale,Furniture,46190,74,624.19
+2024,Dec,2024-12,UK,Retail,Accessories,45730,414,110.46
+2024,Dec,2024-12,Canada,Retail,Office Supplies,44615,263,169.64
+2024,Dec,2024-12,Mexico,Retail,Electronics,42808,130,329.29
+2024,Dec,2024-12,Canada,Retail,Accessories,41098,389,105.65
+2024,Dec,2024-12,US,Wholesale,Office Supplies,39655,236,168.03
+2024,Dec,2024-12,UK,Wholesale,Office Supplies,38290,217,176.45
+2024,Dec,2024-12,Canada,Wholesale,Office Supplies,37035,211,175.52
+2024,Dec,2024-12,Mexico,Online,Office Supplies,33535,260,128.98
+2024,Dec,2024-12,Mexico,Retail,Furniture,33308,75,444.1
+2024,Dec,2024-12,UK,Wholesale,Accessories,31704,304,104.29
+2024,Dec,2024-12,US,Wholesale,Accessories,31250,323,96.75
+2024,Dec,2024-12,Mexico,Wholesale,Electronics,29569,95,311.25
+2024,Dec,2024-12,Mexico,Wholesale,Furniture,27666,60,461.1
+2024,Dec,2024-12,Mexico,Online,Accessories,24809,345,71.91
+2024,Dec,2024-12,Mexico,Retail,Office Supplies,24384,203,120.12
+2024,Dec,2024-12,Canada,Wholesale,Accessories,22907,256,89.48
+2024,Dec,2024-12,Mexico,Retail,Accessories,22674,302,75.08
+2024,Dec,2024-12,Mexico,Wholesale,Office Supplies,20131,163,123.5
+2024,Dec,2024-12,Mexico,Wholesale,Accessories,15742,222,70.91
+2024,Nov,2024-11,US,Online,Electronics,140724,253,556.22
+2024,Nov,2024-11,Canada,Online,Electronics,104814,202,518.88
+2024,Nov,2024-11,UK,Online,Furniture,104800,133,787.97
+2024,Nov,2024-11,US,Online,Furniture,99335,139,714.64
+2024,Nov,2024-11,UK,Online,Electronics,97718,197,496.03
+2024,Nov,2024-11,US,Retail,Furniture,95860,125,766.88
+2024,Nov,2024-11,US,Retail,Electronics,90800,186,488.17
+2024,Nov,2024-11,UK,Online,Office Supplies,79183,368,215.17
+2024,Nov,2024-11,Canada,Retail,Electronics,74679,156,478.71
+2024,Nov,2024-11,UK,Retail,Furniture,72006,101,712.93
+2024,Nov,2024-11,US,Online,Office Supplies,71509,374,191.2
+2024,Nov,2024-11,UK,Retail,Electronics,69491,152,457.18
+2024,Nov,2024-11,Canada,Online,Furniture,69226,107,646.97
+2024,Nov,2024-11,Canada,Retail,Furniture,67441,97,695.27
+2024,Nov,2024-11,US,Wholesale,Electronics,65891,140,470.65
+2024,Nov,2024-11,US,Wholesale,Furniture,62627,89,703.67
+2024,Nov,2024-11,Canada,Online,Office Supplies,59553,316,188.46
+2024,Nov,2024-11,Mexico,Online,Electronics,57903,157,368.81
+2024,Nov,2024-11,UK,Retail,Office Supplies,57515,287,200.4
+2024,Nov,2024-11,UK,Online,Accessories,57281,482,118.84
+2024,Nov,2024-11,US,Retail,Accessories,53121,455,116.75
+2024,Nov,2024-11,US,Online,Accessories,52879,496,106.61
+2024,Nov,2024-11,US,Retail,Office Supplies,52177,293,178.08
+2024,Nov,2024-11,Canada,Wholesale,Electronics,51033,114,447.66
+2024,Nov,2024-11,Mexico,Online,Furniture,48885,94,520.05
+2024,Nov,2024-11,UK,Wholesale,Electronics,47502,111,427.95
+2024,Nov,2024-11,UK,Wholesale,Furniture,45969,71,647.45
+2024,Nov,2024-11,Canada,Retail,Office Supplies,43356,247,175.53
+2024,Nov,2024-11,Canada,Wholesale,Furniture,42544,68,625.64
+2024,Nov,2024-11,Mexico,Retail,Electronics,41500,122,340.16
+2024,Nov,2024-11,Canada,Online,Accessories,39589,397,99.72
+2024,Nov,2024-11,US,Wholesale,Office Supplies,37147,218,170.4
+2024,Nov,2024-11,UK,Retail,Accessories,37048,355,104.36
+2024,Nov,2024-11,UK,Wholesale,Office Supplies,35547,199,178.63
+2024,Nov,2024-11,US,Wholesale,Accessories,34821,325,107.14
+2024,Nov,2024-11,Mexico,Retail,Furniture,33828,72,469.83
+2024,Nov,2024-11,Mexico,Online,Office Supplies,32742,245,133.64
+2024,Nov,2024-11,Mexico,Retail,Office Supplies,30281,216,140.19
+2024,Nov,2024-11,Canada,Wholesale,Office Supplies,28941,178,162.59
+2024,Nov,2024-11,Canada,Retail,Accessories,28207,307,91.88
+2024,Nov,2024-11,Mexico,Wholesale,Electronics,27729,88,315.1
+2024,Nov,2024-11,Mexico,Wholesale,Furniture,25417,55,462.13
+2024,Nov,2024-11,UK,Wholesale,Accessories,25194,258,97.65
+2024,Nov,2024-11,Mexico,Online,Accessories,24141,324,74.51
+2024,Nov,2024-11,Mexico,Retail,Accessories,21913,283,77.43
+2024,Nov,2024-11,Canada,Wholesale,Accessories,21305,235,90.66
+2024,Nov,2024-11,Mexico,Wholesale,Office Supplies,15515,136,114.08
+2024,Nov,2024-11,Mexico,Wholesale,Accessories,11513,181,63.61
+2024,Oct,2024-10,US,Online,Furniture,121757,149,817.16
+2024,Oct,2024-10,US,Online,Electronics,117708,224,525.48
+2024,Oct,2024-10,US,Retail,Furniture,83568,113,739.54
+2024,Oct,2024-10,UK,Online,Furniture,83079,115,722.43
+2024,Oct,2024-10,UK,Retail,Electronics,81766,160,511.04
+2024,Oct,2024-10,UK,Online,Electronics,81195,174,466.64
+2024,Oct,2024-10,US,Online,Office Supplies,79863,383,208.52
+2024,Oct,2024-10,US,Retail,Electronics,75401,164,459.76
+2024,Oct,2024-10,Canada,Online,Electronics,74547,165,451.8
+2024,Oct,2024-10,Canada,Online,Furniture,72547,106,684.41
+2024,Oct,2024-10,Canada,Retail,Furniture,63389,91,696.58
+2024,Oct,2024-10,US,Online,Accessories,62515,522,119.76
+2024,Oct,2024-10,Canada,Online,Office Supplies,59569,306,194.67
+2024,Oct,2024-10,UK,Retail,Furniture,56727,87,652.04
+2024,Oct,2024-10,UK,Online,Office Supplies,56205,300,187.35
+2024,Oct,2024-10,UK,Wholesale,Electronics,54439,115,473.38
+2024,Oct,2024-10,US,Wholesale,Electronics,53634,122,439.62
+2024,Oct,2024-10,Canada,Retail,Electronics,52866,127,416.27
+2024,Oct,2024-10,US,Retail,Office Supplies,52398,284,184.5
+2024,Oct,2024-10,Mexico,Online,Furniture,50878,93,547.08
+2024,Oct,2024-10,US,Wholesale,Furniture,50188,77,651.79
+2024,Oct,2024-10,UK,Online,Accessories,47965,427,112.33
+2024,Oct,2024-10,Mexico,Online,Electronics,45575,135,337.59
+2024,Oct,2024-10,US,Retail,Accessories,44622,404,110.45
+2024,Oct,2024-10,Canada,Online,Accessories,43959,405,108.54
+2024,Oct,2024-10,Mexico,Retail,Electronics,41047,117,350.83
+2024,Oct,2024-10,UK,Retail,Office Supplies,40833,234,174.5
+2024,Oct,2024-10,Canada,Retail,Office Supplies,39139,227,172.42
+2024,Oct,2024-10,UK,Wholesale,Furniture,37049,62,597.57
+2024,Oct,2024-10,Canada,Wholesale,Furniture,36390,61,596.56
+2024,Oct,2024-10,US,Wholesale,Office Supplies,35751,207,172.71
+2024,Oct,2024-10,Mexico,Retail,Furniture,35154,71,495.12
+2024,Oct,2024-10,Canada,Wholesale,Electronics,34708,91,381.41
+2024,Oct,2024-10,UK,Wholesale,Office Supplies,34164,189,180.76
+2024,Oct,2024-10,UK,Retail,Accessories,30879,314,98.34
+2024,Oct,2024-10,Mexico,Online,Office Supplies,29527,225,131.23
+2024,Oct,2024-10,US,Wholesale,Accessories,28588,285,100.31
+2024,Oct,2024-10,Canada,Retail,Accessories,28355,298,95.15
+2024,Oct,2024-10,Mexico,Wholesale,Electronics,26465,83,318.85
+2024,Oct,2024-10,Mexico,Online,Accessories,24197,314,77.06
+2024,Oct,2024-10,Mexico,Wholesale,Furniture,23618,51,463.09
+2024,Oct,2024-10,Canada,Wholesale,Office Supplies,22926,153,149.84
+2024,Oct,2024-10,Mexico,Retail,Office Supplies,21511,176,122.22
+2024,Oct,2024-10,UK,Wholesale,Accessories,20586,226,91.09
+2024,Oct,2024-10,Canada,Wholesale,Accessories,20474,223,91.81
+2024,Oct,2024-10,Mexico,Retail,Accessories,17265,243,71.05
+2024,Oct,2024-10,Mexico,Wholesale,Office Supplies,13740,124,110.81
+2024,Oct,2024-10,Mexico,Wholesale,Accessories,11024,171,64.47
+2024,Sep,2024-09,US,Online,Furniture,106905,137,780.33
+2024,Sep,2024-09,US,Online,Electronics,94430,197,479.34
+2024,Sep,2024-09,UK,Online,Electronics,93127,183,508.89
+2024,Sep,2024-09,US,Retail,Electronics,86571,173,500.41
+2024,Sep,2024-09,US,Online,Office Supplies,85108,388,219.35
+2024,Sep,2024-09,Canada,Online,Furniture,80873,110,735.21
+2024,Sep,2024-09,Canada,Online,Electronics,80183,168,477.28
+2024,Sep,2024-09,US,Retail,Furniture,73362,104,705.4
+2024,Sep,2024-09,UK,Online,Furniture,72173,105,687.36
+2024,Sep,2024-09,UK,Retail,Furniture,69973,95,736.56
+2024,Sep,2024-09,UK,Retail,Electronics,66160,141,469.22
+2024,Sep,2024-09,Canada,Online,Office Supplies,61031,304,200.76
+2024,Sep,2024-09,UK,Online,Office Supplies,60564,306,197.92
+2024,Sep,2024-09,Canada,Retail,Electronics,57205,130,440.04
+2024,Sep,2024-09,US,Retail,Office Supplies,56257,289,194.66
+2024,Sep,2024-09,Canada,Retail,Furniture,55876,84,665.19
+2024,Sep,2024-09,US,Wholesale,Electronics,53443,120,445.36
+2024,Sep,2024-09,US,Online,Accessories,50530,461,109.61
+2024,Sep,2024-09,UK,Online,Accessories,49386,426,115.93
+2024,Sep,2024-09,Mexico,Online,Electronics,48797,137,356.18
+2024,Sep,2024-09,US,Retail,Accessories,45792,402,113.91
+2024,Sep,2024-09,US,Wholesale,Furniture,45621,72,633.63
+2024,Sep,2024-09,Mexico,Online,Furniture,44929,86,522.43
+2024,Sep,2024-09,Canada,Wholesale,Electronics,44530,101,440.89
+2024,Sep,2024-09,Canada,Retail,Office Supplies,44501,238,186.98
+2024,Sep,2024-09,UK,Retail,Office Supplies,44057,239,184.34
+2024,Sep,2024-09,UK,Wholesale,Electronics,38372,95,403.92
+2024,Sep,2024-09,US,Wholesale,Office Supplies,36057,204,176.75
+2024,Sep,2024-09,UK,Retail,Accessories,35183,329,106.94
+2024,Sep,2024-09,Mexico,Online,Office Supplies,33820,237,142.7
+2024,Sep,2024-09,UK,Wholesale,Furniture,33656,58,580.27
+2024,Sep,2024-09,Canada,Wholesale,Furniture,33400,57,585.97
+2024,Sep,2024-09,Canada,Online,Accessories,33251,346,96.1
+2024,Sep,2024-09,Mexico,Retail,Electronics,31515,101,312.03
+2024,Sep,2024-09,UK,Wholesale,Office Supplies,31140,177,175.93
+2024,Sep,2024-09,Canada,Retail,Accessories,30397,303,100.32
+2024,Sep,2024-09,US,Wholesale,Accessories,28228,278,101.54
+2024,Sep,2024-09,Mexico,Retail,Furniture,27801,62,448.41
+2024,Sep,2024-09,Mexico,Online,Accessories,25874,319,81.11
+2024,Sep,2024-09,Mexico,Retail,Office Supplies,24587,185,132.9
+2024,Sep,2024-09,Mexico,Wholesale,Electronics,24206,78,310.33
+2024,Sep,2024-09,Canada,Wholesale,Office Supplies,21859,147,148.7
+2024,Sep,2024-09,UK,Wholesale,Accessories,20403,221,92.32
+2024,Sep,2024-09,Mexico,Wholesale,Furniture,19920,46,433.05
+2024,Sep,2024-09,Canada,Wholesale,Accessories,18751,210,89.29
+2024,Sep,2024-09,Mexico,Retail,Accessories,16739,235,71.23
+2024,Sep,2024-09,Mexico,Wholesale,Office Supplies,16658,134,124.31
+2024,Sep,2024-09,Mexico,Wholesale,Accessories,10087,161,62.65
+2024,Aug,2024-08,US,Online,Electronics,101938,199,512.25
+2024,Aug,2024-08,UK,Online,Furniture,89463,114,784.76
+2024,Aug,2024-08,US,Online,Furniture,84206,118,713.61
+2024,Aug,2024-08,Canada,Online,Electronics,80811,164,492.75
+2024,Aug,2024-08,UK,Online,Electronics,78196,163,479.73
+2024,Aug,2024-08,US,Retail,Electronics,72722,154,472.22
+2024,Aug,2024-08,US,Online,Office Supplies,61110,320,190.97
+2024,Aug,2024-08,UK,Online,Office Supplies,61098,299,204.34
+2024,Aug,2024-08,UK,Retail,Furniture,61096,86,710.42
+2024,Aug,2024-08,Canada,Online,Furniture,60741,93,653.13
+2024,Aug,2024-08,US,Online,Accessories,59662,487,122.51
+2024,Aug,2024-08,US,Retail,Furniture,57908,90,643.42
+2024,Aug,2024-08,Canada,Retail,Electronics,57719,127,454.48
+2024,Aug,2024-08,US,Retail,Office Supplies,56631,282,200.82
+2024,Aug,2024-08,UK,Retail,Electronics,55706,126,442.11
+2024,Aug,2024-08,Mexico,Online,Electronics,49237,134,367.44
+2024,Aug,2024-08,UK,Wholesale,Electronics,44425,99,448.74
+2024,Aug,2024-08,UK,Retail,Office Supplies,44342,233,190.31
+2024,Aug,2024-08,Canada,Online,Office Supplies,43872,251,174.79
+2024,Aug,2024-08,US,Wholesale,Electronics,43562,105,414.88
+2024,Aug,2024-08,UK,Wholesale,Furniture,42255,63,670.72
+2024,Aug,2024-08,UK,Online,Accessories,41614,380,109.51
+2024,Aug,2024-08,US,Wholesale,Furniture,41249,67,615.66
+2024,Aug,2024-08,Canada,Retail,Furniture,41223,70,588.9
+2024,Aug,2024-08,Canada,Retail,Office Supplies,40620,221,183.8
+2024,Aug,2024-08,US,Retail,Accessories,38664,359,107.7
+2024,Aug,2024-08,US,Wholesale,Office Supplies,34891,195,178.93
+2024,Aug,2024-08,Mexico,Online,Office Supplies,33980,231,147.1
+2024,Aug,2024-08,Canada,Online,Accessories,33747,339,99.55
+2024,Aug,2024-08,Mexico,Online,Furniture,33301,72,462.51
+2024,Aug,2024-08,Mexico,Retail,Electronics,31944,99,322.67
+2024,Aug,2024-08,Canada,Wholesale,Electronics,30798,82,375.59
+2024,Aug,2024-08,Canada,Retail,Accessories,30624,296,103.46
+2024,Aug,2024-08,UK,Wholesale,Office Supplies,30260,170,178
+2024,Aug,2024-08,UK,Retail,Accessories,29682,294,100.96
+2024,Aug,2024-08,Mexico,Retail,Furniture,29349,62,473.37
+2024,Aug,2024-08,Canada,Wholesale,Furniture,28989,52,557.49
+2024,Aug,2024-08,Canada,Wholesale,Office Supplies,25057,153,163.77
+2024,Aug,2024-08,UK,Wholesale,Accessories,23587,231,102.11
+2024,Aug,2024-08,Mexico,Wholesale,Electronics,23549,75,313.99
+2024,Aug,2024-08,US,Wholesale,Accessories,23328,246,94.83
+2024,Aug,2024-08,Mexico,Retail,Office Supplies,22463,172,130.6
+2024,Aug,2024-08,Mexico,Online,Accessories,18547,263,70.52
+2024,Aug,2024-08,Canada,Wholesale,Accessories,18172,201,90.41
+2024,Aug,2024-08,Mexico,Wholesale,Furniture,17312,42,412.18
+2024,Aug,2024-08,Mexico,Wholesale,Office Supplies,13576,118,115.05
+2024,Aug,2024-08,Mexico,Retail,Accessories,13189,203,64.97
+2024,Aug,2024-08,Mexico,Wholesale,Accessories,9777,154,63.49
+2024,Jul,2024-07,UK,Online,Electronics,100260,187,536.15
+2024,Jul,2024-07,US,Online,Electronics,93094,193,482.35
+2024,Jul,2024-07,UK,Online,Furniture,85525,113,756.86
+2024,Jul,2024-07,US,Online,Furniture,80202,117,685.49
+2024,Jul,2024-07,US,Retail,Furniture,77350,105,736.67
+2024,Jul,2024-07,UK,Retail,Electronics,71730,145,494.69
+2024,Jul,2024-07,Canada,Online,Furniture,69634,101,689.45
+2024,Jul,2024-07,Canada,Online,Electronics,69449,154,450.97
+2024,Jul,2024-07,US,Online,Office Supplies,67198,340,197.64
+2024,Jul,2024-07,US,Retail,Electronics,66219,149,444.42
+2024,Jul,2024-07,Canada,Retail,Electronics,63268,135,468.65
+2024,Jul,2024-07,US,Wholesale,Electronics,55307,120,460.89
+2024,Jul,2024-07,US,Online,Accessories,54811,473,115.88
+2024,Jul,2024-07,UK,Retail,Furniture,52706,81,650.69
+2024,Jul,2024-07,UK,Online,Office Supplies,52550,281,187.01
+2024,Jul,2024-07,US,Wholesale,Furniture,50692,75,675.89
+2024,Jul,2024-07,US,Retail,Office Supplies,48965,266,184.08
+2024,Jul,2024-07,UK,Retail,Office Supplies,48454,247,196.17
+2024,Jul,2024-07,Canada,Retail,Furniture,47338,76,622.87
+2024,Jul,2024-07,Canada,Online,Office Supplies,43407,253,171.57
+2024,Jul,2024-07,UK,Wholesale,Electronics,39836,95,419.33
+2024,Jul,2024-07,Mexico,Online,Electronics,38335,120,319.46
+2024,Jul,2024-07,Mexico,Online,Furniture,38157,78,489.19
+2024,Jul,2024-07,UK,Online,Accessories,37967,368,103.17
+2024,Jul,2024-07,UK,Wholesale,Furniture,37295,60,621.58
+2024,Jul,2024-07,Canada,Online,Accessories,37058,360,102.94
+2024,Jul,2024-07,US,Wholesale,Office Supplies,36755,203,181.06
+2024,Jul,2024-07,Canada,Wholesale,Electronics,36122,90,401.36
+2024,Jul,2024-07,US,Retail,Accessories,35350,348,101.58
+2024,Jul,2024-07,Mexico,Retail,Electronics,34977,105,333.11
+2024,Jul,2024-07,Mexico,Online,Office Supplies,33692,233,144.6
+2024,Jul,2024-07,Mexico,Retail,Furniture,33359,67,497.89
+2024,Jul,2024-07,UK,Wholesale,Office Supplies,31684,176,180.02
+2024,Jul,2024-07,Canada,Retail,Office Supplies,31481,197,159.8
+2024,Jul,2024-07,Canada,Wholesale,Furniture,29634,53,559.13
+2024,Jul,2024-07,UK,Retail,Accessories,27000,284,95.07
+2024,Jul,2024-07,Mexico,Retail,Office Supplies,24512,182,134.68
+2024,Jul,2024-07,Mexico,Wholesale,Electronics,24451,77,317.55
+2024,Jul,2024-07,Canada,Retail,Accessories,23778,264,90.07
+2024,Jul,2024-07,US,Wholesale,Accessories,23094,248,93.12
+2024,Jul,2024-07,Canada,Wholesale,Office Supplies,21930,145,151.24
+2024,Jul,2024-07,UK,Wholesale,Accessories,21232,222,95.64
+2024,Jul,2024-07,Mexico,Online,Accessories,20373,279,73.02
+2024,Jul,2024-07,Canada,Wholesale,Accessories,19124,209,91.5
+2024,Jul,2024-07,Mexico,Wholesale,Furniture,17774,43,413.34
+2024,Jul,2024-07,Mexico,Wholesale,Office Supplies,16623,132,125.93
+2024,Jul,2024-07,Mexico,Retail,Accessories,14537,216,67.3
+2024,Jul,2024-07,Mexico,Wholesale,Accessories,10290,160,64.31
+2024,Jun,2024-06,US,Online,Electronics,119955,222,540.34
+2024,Jun,2024-06,US,Online,Furniture,107515,137,784.78
+2024,Jun,2024-06,UK,Online,Electronics,92294,182,507.11
+2024,Jun,2024-06,US,Retail,Electronics,85737,172,498.47
+2024,Jun,2024-06,Canada,Online,Furniture,79038,109,725.12
+2024,Jun,2024-06,Canada,Online,Electronics,76472,164,466.29
+2024,Jun,2024-06,US,Retail,Furniture,73844,104,710.04
+2024,Jun,2024-06,US,Online,Office Supplies,73508,360,204.19
+2024,Jun,2024-06,UK,Online,Furniture,73478,106,693.19
+2024,Jun,2024-06,UK,Retail,Electronics,65475,140,467.68
+2024,Jun,2024-06,UK,Online,Office Supplies,57621,298,193.36
+2024,Jun,2024-06,Canada,Retail,Furniture,53812,82,656.24
+2024,Jun,2024-06,US,Retail,Office Supplies,53631,282,190.18
+2024,Jun,2024-06,US,Online,Accessories,50078,458,109.34
+2024,Jun,2024-06,UK,Retail,Furniture,50035,80,625.44
+2024,Jun,2024-06,US,Wholesale,Electronics,49526,115,430.66
+2024,Jun,2024-06,US,Wholesale,Furniture,49329,75,657.72
+2024,Jun,2024-06,Canada,Retail,Electronics,48956,120,407.97
+2024,Jun,2024-06,UK,Online,Accessories,48716,422,115.44
+2024,Jun,2024-06,Canada,Online,Office Supplies,47605,268,177.63
+2024,Jun,2024-06,Mexico,Online,Furniture,43294,84,515.4
+2024,Jun,2024-06,Mexico,Online,Electronics,42005,127,330.75
+2024,Jun,2024-06,Canada,Online,Accessories,40489,381,106.27
+2024,Jun,2024-06,Canada,Wholesale,Furniture,39152,62,631.49
+2024,Jun,2024-06,US,Wholesale,Office Supplies,38643,211,183.14
+2024,Jun,2024-06,Canada,Wholesale,Electronics,37791,93,406.35
+2024,Jun,2024-06,UK,Retail,Office Supplies,37791,221,171
+2024,Jun,2024-06,UK,Wholesale,Furniture,36257,60,604.28
+2024,Jun,2024-06,UK,Wholesale,Electronics,35519,91,390.32
+2024,Jun,2024-06,UK,Retail,Accessories,34826,327,106.5
+2024,Jun,2024-06,Canada,Retail,Office Supplies,34742,210,165.44
+2024,Jun,2024-06,US,Retail,Accessories,32101,336,95.54
+2024,Jun,2024-06,Mexico,Retail,Electronics,29874,98,304.84
+2024,Jun,2024-06,US,Wholesale,Accessories,29071,282,103.09
+2024,Jun,2024-06,Canada,Retail,Accessories,28913,295,98.01
+2024,Jun,2024-06,Canada,Wholesale,Office Supplies,27227,164,166.02
+2024,Jun,2024-06,Mexico,Retail,Furniture,27007,61,442.74
+2024,Jun,2024-06,Mexico,Online,Office Supplies,26183,208,125.88
+2024,Jun,2024-06,Mexico,Retail,Office Supplies,24354,184,132.36
+2024,Jun,2024-06,UK,Wholesale,Office Supplies,23614,154,153.34
+2024,Jun,2024-06,Mexico,Online,Accessories,22339,296,75.47
+2024,Jun,2024-06,UK,Wholesale,Accessories,21047,224,93.96
+2024,Jun,2024-06,Canada,Wholesale,Accessories,20088,217,92.57
+2024,Jun,2024-06,Mexico,Wholesale,Electronics,18393,68,270.49
+2024,Jun,2024-06,Mexico,Wholesale,Furniture,16500,42,392.85
+2024,Jun,2024-06,Mexico,Retail,Accessories,15936,229,69.59
+2024,Jun,2024-06,Mexico,Wholesale,Office Supplies,14713,126,116.77
+2024,Jun,2024-06,Mexico,Wholesale,Accessories,10873,167,65.11
+2024,May,2024-05,US,Online,Electronics,104667,205,510.57
+2024,May,2024-05,US,Online,Furniture,88473,123,719.29
+2024,May,2024-05,UK,Online,Electronics,80381,168,478.46
+2024,May,2024-05,Canada,Online,Electronics,79899,166,481.32
+2024,May,2024-05,US,Online,Office Supplies,76873,365,210.61
+2024,May,2024-05,US,Retail,Electronics,74852,159,470.77
+2024,May,2024-05,UK,Online,Furniture,66625,100,666.25
+2024,May,2024-05,UK,Retail,Furniture,64255,90,713.94
+2024,May,2024-05,Canada,Online,Furniture,61252,95,644.76
+2024,May,2024-05,US,Retail,Furniture,60377,93,649.21
+2024,May,2024-05,UK,Online,Office Supplies,60276,302,199.59
+2024,May,2024-05,UK,Retail,Electronics,57334,130,441.03
+2024,May,2024-05,US,Retail,Office Supplies,55906,285,196.16
+2024,May,2024-05,Canada,Retail,Electronics,51505,122,422.17
+2024,May,2024-05,Canada,Online,Office Supplies,49934,272,183.58
+2024,May,2024-05,Mexico,Online,Electronics,44095,129,341.82
+2024,May,2024-05,UK,Retail,Office Supplies,43872,236,185.9
+2024,May,2024-05,US,Online,Accessories,43522,423,102.89
+2024,May,2024-05,UK,Wholesale,Furniture,42987,65,661.34
+2024,May,2024-05,UK,Wholesale,Electronics,42973,99,434.07
+2024,May,2024-05,Mexico,Online,Furniture,42854,83,516.31
+2024,May,2024-05,UK,Online,Accessories,42779,392,109.13
+2024,May,2024-05,Canada,Online,Accessories,42169,385,109.53
+2024,May,2024-05,US,Wholesale,Electronics,42089,105,400.85
+2024,May,2024-05,Canada,Retail,Furniture,41872,72,581.55
+2024,May,2024-05,US,Wholesale,Furniture,41328,68,607.77
+2024,May,2024-05,US,Retail,Accessories,39697,370,107.29
+2024,May,2024-05,US,Wholesale,Office Supplies,38698,209,185.16
+2024,May,2024-05,Canada,Wholesale,Electronics,37832,92,411.22
+2024,May,2024-05,Canada,Retail,Office Supplies,32811,202,162.43
+2024,May,2024-05,Mexico,Retail,Electronics,31518,100,315.18
+2024,May,2024-05,UK,Retail,Accessories,30491,303,100.63
+2024,May,2024-05,Canada,Retail,Accessories,30116,298,101.06
+2024,May,2024-05,Mexico,Retail,Furniture,29422,63,467.01
+2024,May,2024-05,Canada,Wholesale,Furniture,27175,51,532.84
+2024,May,2024-05,Canada,Wholesale,Office Supplies,25202,156,161.55
+2024,May,2024-05,US,Wholesale,Accessories,24991,259,96.49
+2024,May,2024-05,Mexico,Online,Office Supplies,24708,200,123.54
+2024,May,2024-05,UK,Wholesale,Office Supplies,23788,153,155.48
+2024,May,2024-05,Mexico,Wholesale,Electronics,20520,71,289.01
+2024,May,2024-05,Canada,Wholesale,Accessories,20126,215,93.61
+2024,May,2024-05,Mexico,Online,Accessories,18253,265,68.88
+2024,May,2024-05,UK,Wholesale,Accessories,17962,205,87.62
+2024,May,2024-05,Mexico,Retail,Office Supplies,17951,156,115.07
+2024,May,2024-05,Mexico,Retail,Accessories,16665,232,71.83
+2024,May,2024-05,Mexico,Wholesale,Furniture,16156,41,394.05
+2024,May,2024-05,Mexico,Wholesale,Office Supplies,13625,120,113.54
+2024,May,2024-05,Mexico,Wholesale,Accessories,10872,165,65.89
+2024,Apr,2024-04,US,Online,Electronics,89503,186,481.2
+2024,Apr,2024-04,Canada,Online,Electronics,81352,164,496.05
+2024,Apr,2024-04,US,Online,Furniture,78833,114,691.52
+2024,Apr,2024-04,UK,Online,Furniture,75394,104,724.94
+2024,Apr,2024-04,UK,Online,Electronics,68430,152,450.2
+2024,Apr,2024-04,Canada,Online,Furniture,65285,96,680.05
+2024,Apr,2024-04,US,Retail,Electronics,63858,144,443.46
+2024,Apr,2024-04,US,Online,Office Supplies,61959,321,193.02
+2024,Apr,2024-04,UK,Online,Office Supplies,61504,299,205.7
+2024,Apr,2024-04,Canada,Retail,Electronics,58127,127,457.69
+2024,Apr,2024-04,US,Wholesale,Electronics,55176,118,467.59
+2024,Apr,2024-04,US,Retail,Furniture,53622,86,623.51
+2024,Apr,2024-04,US,Online,Accessories,52618,456,115.39
+2024,Apr,2024-04,UK,Retail,Furniture,51771,79,655.33
+2024,Apr,2024-04,UK,Retail,Electronics,48526,117,414.75
+2024,Apr,2024-04,US,Wholesale,Furniture,47983,72,666.43
+2024,Apr,2024-04,Canada,Online,Office Supplies,46340,257,180.31
+2024,Apr,2024-04,Mexico,Online,Electronics,45143,128,352.68
+2024,Apr,2024-04,Canada,Retail,Furniture,44864,73,614.57
+2024,Apr,2024-04,UK,Retail,Office Supplies,44640,233,191.59
+2024,Apr,2024-04,US,Retail,Office Supplies,40581,238,170.51
+2024,Apr,2024-04,UK,Wholesale,Furniture,38630,60,643.83
+2024,Apr,2024-04,Canada,Wholesale,Electronics,37436,90,415.96
+2024,Apr,2024-04,UK,Online,Accessories,36530,355,102.9
+2024,Apr,2024-04,UK,Wholesale,Electronics,36072,89,405.3
+2024,Apr,2024-04,US,Retail,Accessories,34027,336,101.27
+2024,Apr,2024-04,Canada,Retail,Office Supplies,33754,201,167.93
+2024,Apr,2024-04,Mexico,Online,Furniture,32521,71,458.04
+2024,Apr,2024-04,Mexico,Retail,Electronics,32207,99,325.32
+2024,Apr,2024-04,Mexico,Retail,Furniture,31413,64,490.83
+2024,Apr,2024-04,Canada,Online,Accessories,30834,323,95.46
+2024,Apr,2024-04,US,Wholesale,Office Supplies,27008,171,157.94
+2024,Apr,2024-04,Canada,Wholesale,Furniture,26187,49,534.43
+2024,Apr,2024-04,UK,Retail,Accessories,25986,274,94.84
+2024,Apr,2024-04,Mexico,Online,Office Supplies,25450,199,127.89
+2024,Apr,2024-04,UK,Wholesale,Office Supplies,23478,149,157.57
+2024,Apr,2024-04,Canada,Retail,Accessories,21990,250,87.96
+2024,Apr,2024-04,UK,Wholesale,Accessories,21168,218,97.1
+2024,Apr,2024-04,US,Wholesale,Accessories,20875,232,89.98
+2024,Apr,2024-04,Canada,Wholesale,Office Supplies,20749,139,149.27
+2024,Apr,2024-04,Mexico,Wholesale,Electronics,20187,69,292.57
+2024,Apr,2024-04,Mexico,Online,Accessories,18826,264,71.31
+2024,Apr,2024-04,Mexico,Retail,Office Supplies,18583,156,119.12
+2024,Apr,2024-04,Mexico,Retail,Accessories,17027,230,74.03
+2024,Apr,2024-04,Mexico,Wholesale,Furniture,15807,40,395.18
+2024,Apr,2024-04,Canada,Wholesale,Accessories,14032,176,79.73
+2024,Apr,2024-04,Mexico,Wholesale,Office Supplies,11087,106,104.59
+2024,Apr,2024-04,Mexico,Wholesale,Accessories,10731,161,66.65
+2024,Mar,2024-03,US,Online,Electronics,109143,203,537.65
+2024,Mar,2024-03,UK,Online,Electronics,84312,167,504.86
+2024,Mar,2024-03,US,Retail,Electronics,77883,157,496.07
+2024,Mar,2024-03,US,Online,Furniture,71060,107,664.11
+2024,Mar,2024-03,Canada,Online,Furniture,70755,99,714.7
+2024,Mar,2024-03,UK,Online,Furniture,68404,98,698
+2024,Mar,2024-03,US,Online,Office Supplies,64799,325,199.38
+2024,Mar,2024-03,US,Retail,Furniture,62533,92,679.71
+2024,Mar,2024-03,Canada,Online,Electronics,60522,140,432.3
+2024,Mar,2024-03,UK,Retail,Electronics,60074,129,465.69
+2024,Mar,2024-03,Canada,Retail,Furniture,48524,75,646.99
+2024,Mar,2024-03,Canada,Online,Office Supplies,48197,259,186.09
+2024,Mar,2024-03,US,Wholesale,Electronics,47288,108,437.85
+2024,Mar,2024-03,UK,Retail,Furniture,46650,74,630.4
+2024,Mar,2024-03,US,Online,Accessories,45876,421,108.97
+2024,Mar,2024-03,UK,Online,Office Supplies,45714,255,179.27
+2024,Mar,2024-03,US,Wholesale,Furniture,44099,68,648.51
+2024,Mar,2024-03,Canada,Retail,Electronics,43022,108,398.35
+2024,Mar,2024-03,US,Retail,Office Supplies,42537,241,176.5
+2024,Mar,2024-03,Canada,Wholesale,Electronics,37432,89,420.58
+2024,Mar,2024-03,Mexico,Online,Electronics,36816,114,322.95
+2024,Mar,2024-03,Canada,Online,Accessories,35693,344,103.76
+2024,Mar,2024-03,Mexico,Online,Furniture,35310,73,483.7
+2024,Mar,2024-03,UK,Wholesale,Electronics,34218,86,397.88
+2024,Mar,2024-03,Mexico,Retail,Electronics,33525,100,335.25
+2024,Mar,2024-03,UK,Retail,Office Supplies,33227,199,166.97
+2024,Mar,2024-03,UK,Wholesale,Furniture,32786,55,596.11
+2024,Mar,2024-03,Canada,Wholesale,Furniture,32674,54,605.08
+2024,Mar,2024-03,Canada,Retail,Office Supplies,31828,193,164.91
+2024,Mar,2024-03,UK,Retail,Accessories,31791,300,105.97
+2024,Mar,2024-03,UK,Online,Accessories,31644,327,96.77
+2024,Mar,2024-03,US,Retail,Accessories,29460,309,95.34
+2024,Mar,2024-03,US,Wholesale,Office Supplies,27215,170,160.09
+2024,Mar,2024-03,Mexico,Online,Office Supplies,26696,202,132.16
+2024,Mar,2024-03,US,Wholesale,Accessories,25027,251,99.71
+2024,Mar,2024-03,Canada,Wholesale,Office Supplies,24387,149,163.67
+2024,Mar,2024-03,Mexico,Retail,Furniture,24027,55,436.86
+2024,Mar,2024-03,UK,Wholesale,Office Supplies,23621,148,159.6
+2024,Mar,2024-03,Canada,Retail,Accessories,23026,253,91.01
+2024,Mar,2024-03,Mexico,Wholesale,Electronics,20131,68,296.04
+2024,Mar,2024-03,Mexico,Online,Accessories,19675,267,73.69
+2024,Mar,2024-03,Mexico,Wholesale,Furniture,19660,44,446.82
+2024,Mar,2024-03,UK,Wholesale,Accessories,18164,200,90.82
+2024,Mar,2024-03,Mexico,Retail,Office Supplies,17541,150,116.94
+2024,Mar,2024-03,Canada,Wholesale,Accessories,14064,174,80.83
+2024,Mar,2024-03,Mexico,Retail,Accessories,13998,206,67.95
+2024,Mar,2024-03,Mexico,Wholesale,Office Supplies,13128,114,115.16
+2024,Mar,2024-03,Mexico,Wholesale,Accessories,10715,159,67.39
+2024,Feb,2024-02,US,Online,Electronics,95579,188,508.4
+2024,Feb,2024-02,US,Online,Furniture,82527,114,723.92
+2024,Feb,2024-02,UK,Online,Electronics,73415,154,476.72
+2024,Feb,2024-02,US,Retail,Electronics,68455,146,468.87
+2024,Feb,2024-02,US,Online,Office Supplies,67231,327,205.6
+2024,Feb,2024-02,Canada,Online,Electronics,63484,142,447.07
+2024,Feb,2024-02,UK,Online,Furniture,61769,92,671.4
+2024,Feb,2024-02,US,Retail,Furniture,56899,87,654.01
+2024,Feb,2024-02,Canada,Online,Furniture,54702,86,636.07
+2024,Feb,2024-02,UK,Online,Office Supplies,52804,271,194.85
+2024,Feb,2024-02,UK,Retail,Electronics,47132,113,417.1
+2024,Feb,2024-02,Canada,Online,Office Supplies,45517,249,182.8
+2024,Feb,2024-02,Canada,Retail,Electronics,45335,110,412.14
+2024,Feb,2024-02,US,Retail,Office Supplies,44501,244,182.38
+2024,Feb,2024-02,UK,Retail,Furniture,42405,70,605.78
+2024,Feb,2024-02,UK,Wholesale,Electronics,40954,93,440.37
+2024,Feb,2024-02,US,Wholesale,Electronics,40443,99,408.52
+2024,Feb,2024-02,US,Online,Accessories,39820,388,102.63
+2024,Feb,2024-02,UK,Online,Accessories,39002,359,108.64
+2024,Feb,2024-02,Mexico,Online,Electronics,38709,116,333.7
+2024,Feb,2024-02,Mexico,Online,Furniture,38167,75,508.89
+2024,Feb,2024-02,Canada,Retail,Furniture,37304,65,573.9
+2024,Feb,2024-02,US,Wholesale,Furniture,37173,62,599.57
+2024,Feb,2024-02,Canada,Online,Accessories,36994,346,106.92
+2024,Feb,2024-02,US,Retail,Accessories,36195,339,106.77
+2024,Feb,2024-02,UK,Retail,Office Supplies,34707,201,172.67
+2024,Feb,2024-02,Canada,Retail,Office Supplies,33201,195,170.26
+2024,Feb,2024-02,Canada,Wholesale,Furniture,32114,53,605.93
+2024,Feb,2024-02,UK,Retail,Accessories,27758,277,100.21
+2024,Feb,2024-02,US,Wholesale,Office Supplies,27246,168,162.18
+2024,Feb,2024-02,UK,Wholesale,Furniture,26905,49,549.08
+2024,Feb,2024-02,Canada,Wholesale,Electronics,26504,74,358.16
+2024,Feb,2024-02,Mexico,Retail,Furniture,26244,57,460.42
+2024,Feb,2024-02,Mexico,Online,Office Supplies,25177,194,129.78
+2024,Feb,2024-02,Mexico,Retail,Electronics,24833,85,292.15
+2024,Feb,2024-02,Canada,Retail,Accessories,23970,255,94
+2024,Feb,2024-02,UK,Wholesale,Office Supplies,23591,146,161.58
+2024,Feb,2024-02,US,Wholesale,Accessories,21448,230,93.25
+2024,Feb,2024-02,Canada,Wholesale,Office Supplies,20457,135,151.53
+2024,Feb,2024-02,Mexico,Online,Accessories,20449,269,76.02
+2024,Feb,2024-02,Mexico,Wholesale,Electronics,20360,68,299.41
+2024,Feb,2024-02,Mexico,Wholesale,Furniture,19238,43,447.4
+2024,Feb,2024-02,Mexico,Retail,Office Supplies,18253,151,120.88
+2024,Feb,2024-02,UK,Wholesale,Accessories,15403,182,84.63
+2024,Feb,2024-02,Mexico,Retail,Accessories,14585,208,70.12
+2024,Feb,2024-02,Canada,Wholesale,Accessories,14169,173,81.9
+2024,Feb,2024-02,Mexico,Wholesale,Office Supplies,12205,109,111.97
+2024,Feb,2024-02,Mexico,Wholesale,Accessories,7575,132,57.39
+2024,Jan,2024-01,US,Online,Electronics,82964,173,479.56
+2024,Jan,2024-01,US,Online,Furniture,74526,107,696.5
+2024,Jan,2024-01,Canada,Online,Electronics,72626,150,484.17
+2024,Jan,2024-01,UK,Online,Furniture,71382,98,728.39
+2024,Jan,2024-01,UK,Online,Electronics,63754,142,448.97
+2024,Jan,2024-01,US,Retail,Electronics,59233,134,442.04
+2024,Jan,2024-01,Canada,Online,Furniture,58990,88,670.34
+2024,Jan,2024-01,UK,Retail,Electronics,57920,124,467.1
+2024,Jan,2024-01,UK,Online,Office Supplies,54813,273,200.78
+2024,Jan,2024-01,US,Retail,Furniture,50920,81,628.64
+2024,Jan,2024-01,US,Online,Office Supplies,49676,278,178.69
+2024,Jan,2024-01,UK,Retail,Furniture,48767,74,659.02
+2024,Jan,2024-01,US,Online,Accessories,48671,424,114.79
+2024,Jan,2024-01,US,Wholesale,Electronics,48378,107,452.13
+2024,Jan,2024-01,Canada,Online,Office Supplies,47296,251,188.43
+2024,Jan,2024-01,Canada,Retail,Electronics,47247,111,425.65
+2024,Jan,2024-01,Canada,Retail,Furniture,40600,67,605.97
+2024,Jan,2024-01,Mexico,Online,Electronics,40275,117,344.23
+2024,Jan,2024-01,UK,Retail,Office Supplies,36187,203,178.26
+2024,Jan,2024-01,US,Retail,Office Supplies,36113,217,166.42
+2024,Jan,2024-01,UK,Wholesale,Furniture,35526,56,634.4
+2024,Jan,2024-01,UK,Wholesale,Electronics,35026,85,412.07
+2024,Jan,2024-01,US,Wholesale,Furniture,34357,59,582.32
+2024,Jan,2024-01,UK,Online,Accessories,33937,331,102.53
+2024,Jan,2024-01,US,Retail,Accessories,31569,313,100.86
+2024,Jan,2024-01,Canada,Retail,Office Supplies,31270,187,167.22
+2024,Jan,2024-01,Mexico,Online,Furniture,29372,65,451.88
+2024,Jan,2024-01,Canada,Wholesale,Furniture,28917,50,578.33
+2024,Jan,2024-01,Mexico,Retail,Electronics,28577,90,317.52
+2024,Jan,2024-01,Canada,Online,Accessories,27485,295,93.17
+2024,Jan,2024-01,US,Wholesale,Office Supplies,27425,167,164.22
+2024,Jan,2024-01,Canada,Wholesale,Electronics,26503,73,363.06
+2024,Jan,2024-01,Mexico,Online,Office Supplies,26116,195,133.93
+2024,Jan,2024-01,UK,Retail,Accessories,24197,256,94.52
+2024,Jan,2024-01,UK,Wholesale,Office Supplies,23709,145,163.51
+2024,Jan,2024-01,Mexico,Wholesale,Electronics,20280,67,302.69
+2024,Jan,2024-01,Mexico,Retail,Furniture,19965,49,407.44
+2024,Jan,2024-01,Canada,Retail,Accessories,19574,228,85.85
+2024,Jan,2024-01,Canada,Wholesale,Office Supplies,18845,128,147.23
+2024,Jan,2024-01,UK,Wholesale,Accessories,18492,197,93.87
+2024,Jan,2024-01,US,Wholesale,Accessories,18160,209,86.89
+2024,Jan,2024-01,Mexico,Retail,Office Supplies,17210,145,118.69
+2024,Jan,2024-01,Mexico,Wholesale,Furniture,17087,40,427.18
+2024,Jan,2024-01,Mexico,Retail,Accessories,15173,210,72.25
+2024,Jan,2024-01,Mexico,Online,Accessories,15043,228,65.98
+2024,Jan,2024-01,Canada,Wholesale,Accessories,14184,171,82.95
+2024,Jan,2024-01,Mexico,Wholesale,Office Supplies,10115,98,103.21
+2024,Jan,2024-01,Mexico,Wholesale,Accessories,7620,131,58.17

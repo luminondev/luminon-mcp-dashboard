@@ -1,0 +1,31 @@
+employee_id,full_name,department,position,level,salary,hire_date,hire_year,age,gender,performance_score,training_hours,satisfaction_score,absenteeism_days,overtime_hours,location
+EMP020,Carlos Alberto Gil,Technology,Data Scientist,Senior,92000,2019-09-10,2019,33,Male,4.8,140,4.7,1,22,Barcelona
+EMP002,Carlos Lopez,Technology,Senior Developer,Senior,95000,2019-03-22,2019,32,Male,4.8,80,4.5,1,20,Barcelona
+EMP029,Adriana Lozano,Marketing,Product Marketing Manager,Senior,80000,2019-07-22,2019,36,Female,4.7,70,4.8,1,12,Madrid
+EMP016,Javier Moreno,Sales,Key Account Manager,Senior,82000,2019-02-18,2019,35,Male,4.7,60,4.5,1,18,Valencia
+EMP025,Cristina Vidal,Finance,Financial Controller,Senior,85000,2018-06-15,2018,38,Female,4.6,60,4.4,2,8,Bilbao
+EMP006,Diego Fernandez,Technology,DevOps Engineer,Senior,88000,2019-11-30,2019,31,Male,4.6,110,4.6,1,18,Barcelona
+EMP001,Ana Garcia,Human Resources,HR Manager,Senior,85000,2020-01-15,2020,35,Female,4.5,120,4.2,2,15,Madrid
+EMP023,Silvia Cortes,Marketing,Brand Manager,Senior,78000,2018-12-03,2018,35,Female,4.5,55,4.6,1,10,Madrid
+EMP011,Isabel Torres,Marketing,Content Manager,Senior,72000,2019-04-08,2019,36,Female,4.4,65,4.7,1,8,Madrid
+EMP018,Luis Ramirez,Operations,Production Supervisor,Senior,75000,2018-05-22,2018,39,Male,4.4,50,4.2,2,11,Seville
+EMP015,Beatriz Castro,Human Resources,Training Coordinator,Intermediate,58000,2021-11-05,2021,31,Female,4.3,130,4.6,2,8,Madrid
+EMP009,Carmen Diaz,Sales,Sales Executive,Intermediate,58000,2020-12-01,2020,33,Female,4.3,70,4.4,3,15,Valencia
+EMP027,Nuria Marin,Sales,Customer Success Manager,Intermediate,62000,2021-04-05,2021,32,Female,4.3,80,4.5,3,11,Valencia
+EMP026,David Herrero,Technology,Backend Developer,Intermediate,68000,2020-11-22,2020,30,Male,4.2,90,4.3,2,16,Barcelona
+EMP003,Maria Rodriguez,Sales,Sales Manager,Senior,78000,2018-07-10,2018,38,Female,4.2,95,3.8,5,12,Valencia
+EMP013,Patricia Ruiz,Finance,Accountant,Senior,68000,2018-10-12,2018,37,Female,4.2,70,4,2,7,Bilbao
+EMP024,Alberto Romero,Operations,Quality Control,Intermediate,57000,2021-01-10,2021,31,Male,4.1,70,4.2,3,9,Seville
+EMP014,Francisco Vargas,Technology,QA Engineer,Intermediate,60000,2020-08-30,2020,29,Male,4.1,95,4.3,3,14,Barcelona
+EMP005,Laura Sanchez,Marketing,Marketing Specialist,Intermediate,65000,2021-05-18,2021,30,Female,4.1,75,4.3,2,10,Madrid
+EMP012,Antonio Jimenez,Operations,Logistics Coordinator,Intermediate,55000,2021-03-25,2021,34,Male,4,55,4.2,4,10,Seville
+EMP019,Maria del Mar Sanz,Finance,Budget Analyst,Intermediate,59000,2021-07-28,2021,32,Female,4,75,4.3,3,6,Bilbao
+EMP028,Oscar Ibanez,Human Resources,Compensation Analyst,Intermediate,64000,2020-10-18,2020,34,Male,4,85,4.2,2,7,Madrid
+EMP007,Sofia Martin,Finance,Financial Analyst,Intermediate,62000,2021-09-14,2021,29,Female,4,85,4.1,4,6,Bilbao
+EMP017,Ana Isabel Ortiz,Marketing,SEO Specialist,Junior,42000,2023-03-12,2023,25,Female,3.9,80,4.1,4,9,Madrid
+EMP004,Juan Martinez,Operations,Operations Analyst,Junior,52000,2022-02-01,2022,28,Male,3.9,60,4,3,8,Seville
+EMP021,Elena Navarro,Human Resources,Recruiter,Junior,46000,2022-08-15,2022,27,Female,3.8,95,3.8,5,7,Madrid
+EMP010,Miguel Angel Perez,Technology,Junior Developer,Junior,45000,2023-01-10,2023,24,Male,3.8,100,3.7,2,12,Barcelona
+EMP030,Manuel Santos,Operations,Supply Chain Analyst,Junior,48000,2022-12-01,2022,28,Male,3.7,75,3.8,4,10,Seville
+EMP008,Roberto Gomez,Human Resources,HR Specialist,Junior,48000,2022-06-20,2022,26,Male,3.7,90,3.9,6,5,Madrid
+EMP022,Ricardo Guerrero,Sales,Sales Representative,Junior,44000,2023-02-20,2023,26,Male,3.6,65,3.9,6,12,Valencia

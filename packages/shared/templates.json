@@ -1,0 +1,73 @@
+{
+  "templates": [
+    {
+      "id": "business-3x3",
+      "name": "Business 3 Columns",
+      "description": "Executive layout with a KPI, a table, and three comparison views.",
+      "grid": { "columns": 3, "rows": 3 },
+      "charts": [
+        {
+          "id": "kpi-total-sales",
+          "type": "kpi_card",
+          "title": "Total Sales",
+          "valueField": "sales",
+          "aggregation": "sum",
+          "gridPos": { "x": 0, "y": 0, "w": 1, "h": 1 }
+        },
+        {
+          "id": "table-top-clients",
+          "type": "table",
+          "title": "Top Clients",
+          "columns": ["country", "sales", "orders"],
+          "limit": 5,
+          "gridPos": { "x": 1, "y": 0, "w": 2, "h": 1 }
+        },
+        {
+          "id": "bar-sales-country",
+          "type": "bar",
+          "title": "Sales by Country",
+          "xField": "country",
+          "yField": "sales",
+          "aggregation": "sum",
+          "gridPos": { "x": 0, "y": 1, "w": 1, "h": 1 }
+        },
+        {
+          "id": "line-sales-trend",
+          "type": "line",
+          "title": "Monthly Trend",
+          "xField": "month",
+          "yField": "sales",
+          "aggregation": "sum",
+          "seriesField": "channel",
+          "gridPos": { "x": 1, "y": 1, "w": 1, "h": 1 }
+        },
+        {
+          "id": "donut-category-share",
+          "type": "donut",
+          "title": "Category Share",
+          "categoryField": "category",
+          "valueField": "sales",
+          "aggregation": "sum",
+          "gridPos": { "x": 2, "y": 1, "w": 1, "h": 1 }
+        },
+        {
+          "id": "bar-sales-channel",
+          "type": "bar",
+          "title": "Sales by Month and Channel",
+          "xField": "month",
+          "yField": "sales",
+          "aggregation": "sum",
+          "seriesField": "channel",
+          "gridPos": { "x": 0, "y": 2, "w": 3, "h": 1 }
+        }
+      ],
+      "filters": [
+        { "id": "filter-year", "field": "year", "operator": "eq", "fieldType": "number", "defaultValue": 2024 },
+        { "id": "filter-country", "field": "country", "operator": "in", "fieldType": "string", "defaultValue": ["US", "MX"] }
+      ],
+      "defaultDatasetId": "default_business",
+      "requiredColumns": ["year", "month", "country", "channel", "category", "sales", "orders"],
+      "themePreset": "business"
+    }
+  ]
+}

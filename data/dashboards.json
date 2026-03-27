@@ -1,0 +1,975 @@
+{
+  "dashboards": [
+    {
+      "id": "db_demo_coffee",
+      "name": "Coffee Roastery Lab",
+      "subtitle": "A simple filter-free sandbox for trying chart layouts and themes.",
+      "themePreset": "pastel",
+      "presentation": {
+        "numberFormat": "compact",
+        "decimals": 1
+      },
+      "charts": [
+        {
+          "id": "coffee_revenue_combo",
+          "type": "combo",
+          "title": "Revenue and Subscription Orders by Period",
+          "datasetId": "coffee_roastery_lab",
+          "x": "period",
+          "barY": "revenue",
+          "lineY": "subscription_orders",
+          "source": {
+            "datasetId": "coffee_roastery_lab",
+            "xField": "period",
+            "barField": "revenue",
+            "lineField": "subscription_orders",
+            "aggregation": "sum"
+          }
+        },
+        {
+          "id": "coffee_roast_mix",
+          "type": "donut",
+          "title": "Revenue Share by Roast Profile",
+          "datasetId": "coffee_roastery_lab",
+          "source": {
+            "datasetId": "coffee_roastery_lab",
+            "categoryField": "roast_profile",
+            "valueField": "revenue",
+            "aggregation": "sum"
+          }
+        },
+        {
+          "id": "coffee_origin_radar",
+          "type": "radar",
+          "title": "Average Cup Score by Origin",
+          "datasetId": "coffee_roastery_lab",
+          "indexField": "origin",
+          "valueField": "cup_score",
+          "presentation": {
+            "numberFormat": "number",
+            "decimals": 1
+          },
+          "source": {
+            "datasetId": "coffee_roastery_lab",
+            "indexField": "origin",
+            "valueField": "cup_score",
+            "aggregation": "avg"
+          }
+        },
+        {
+          "id": "coffee_blend_table",
+          "type": "table",
+          "title": "Blend Snapshot",
+          "datasetId": "coffee_roastery_lab",
+          "columns": [
+            "period",
+            "blend",
+            "origin",
+            "roast_profile",
+            "bags_sold",
+            "revenue",
+            "cup_score"
+          ],
+          "limit": 12,
+          "source": {
+            "datasetId": "coffee_roastery_lab",
+            "columns": [
+              "period",
+              "blend",
+              "origin",
+              "roast_profile",
+              "bags_sold",
+              "revenue",
+              "cup_score"
+            ],
+            "limit": 12
+          }
+        }
+      ],
+      "layout": {
+        "grid": {
+          "columns": 5,
+          "rows": 2
+        },
+        "items": [
+          {
+            "chart": "coffee_revenue_combo",
+            "x": 0,
+            "y": 0,
+            "w": 3,
+            "h": 1
+          },
+          {
+            "chart": "coffee_roast_mix",
+            "x": 3,
+            "y": 0,
+            "w": 2,
+            "h": 1
+          },
+          {
+            "chart": "coffee_origin_radar",
+            "x": 0,
+            "y": 1,
+            "w": 2,
+            "h": 1
+          },
+          {
+            "chart": "coffee_blend_table",
+            "x": 2,
+            "y": 1,
+            "w": 3,
+            "h": 1
+          }
+        ]
+      },
+      "filters": [],
+      "published": true,
+      "createdAt": "2026-03-26T00:00:00.000Z",
+      "updatedAt": "2026-03-26T00:00:00.000Z"
+    },
+    {
+      "id": "db_demo_hr",
+      "name": "HR Workforce Overview",
+      "subtitle": "Headcount, pay, engagement, and hiring patterns across the organization.",
+      "themePreset": "clean",
+      "presentation": {
+        "numberFormat": "compact",
+        "decimals": 1
+      },
+      "charts": [
+        {
+          "id": "hr_headcount_kpi",
+          "type": "kpi_card",
+          "title": "Active Headcount",
+          "datasetId": "hr_dataset",
+          "label": "employees",
+          "format": "number",
+          "presentation": {
+            "icon": "users",
+            "decimals": 0
+          },
+          "source": {
+            "datasetId": "hr_dataset",
+            "valueField": "employee_id",
+            "aggregation": "count",
+            "format": "number"
+          }
+        },
+        {
+          "id": "hr_department_donut",
+          "type": "donut",
+          "title": "Headcount by Department",
+          "datasetId": "hr_dataset",
+          "source": {
+            "datasetId": "hr_dataset",
+            "categoryField": "department",
+            "valueField": "employee_id",
+            "aggregation": "count"
+          }
+        },
+        {
+          "id": "hr_department_gender_grouped",
+          "type": "bar_grouped",
+          "title": "Headcount by Department and Gender",
+          "datasetId": "hr_dataset",
+          "indexBy": "department",
+          "keys": [],
+          "source": {
+            "datasetId": "hr_dataset",
+            "xField": "department",
+            "seriesField": "gender",
+            "valueField": "employee_id",
+            "aggregation": "count"
+          }
+        },
+        {
+          "id": "hr_salary_bar",
+          "type": "bar",
+          "title": "Average Salary by Department",
+          "datasetId": "hr_dataset",
+          "x": "department",
+          "y": "salary",
+          "presentation": {
+            "numberFormat": "currency",
+            "currency": "USD",
+            "decimals": 0
+          },
+          "source": {
+            "datasetId": "hr_dataset",
+            "xField": "department",
+            "yField": "salary",
+            "aggregation": "avg"
+          }
+        },
+        {
+          "id": "hr_satisfaction_radar",
+          "type": "radar",
+          "title": "Average Satisfaction by Department and Level",
+          "datasetId": "hr_dataset",
+          "indexField": "department",
+          "valueField": "satisfaction_score",
+          "seriesField": "level",
+          "presentation": {
+            "numberFormat": "number",
+            "decimals": 1
+          },
+          "source": {
+            "datasetId": "hr_dataset",
+            "indexField": "department",
+            "valueField": "satisfaction_score",
+            "seriesField": "level",
+            "aggregation": "avg"
+          }
+        },
+        {
+          "id": "hr_perf_scatter",
+          "type": "scatter",
+          "title": "Performance vs Satisfaction",
+          "datasetId": "hr_dataset",
+          "x": "performance_score",
+          "y": "satisfaction_score",
+          "series": "department",
+          "presentation": {
+            "numberFormat": "number",
+            "decimals": 1
+          },
+          "source": {
+            "datasetId": "hr_dataset",
+            "xField": "performance_score",
+            "yField": "satisfaction_score",
+            "seriesField": "department"
+          }
+        },
+        {
+          "id": "hr_hires_line",
+          "type": "line",
+          "title": "Hires by Year",
+          "datasetId": "hr_dataset",
+          "x": "hire_year",
+          "y": "employee_id",
+          "presentation": {
+            "numberFormat": "number",
+            "decimals": 0
+          },
+          "source": {
+            "datasetId": "hr_dataset",
+            "xField": "hire_year",
+            "yField": "employee_id",
+            "aggregation": "count"
+          }
+        },
+        {
+          "id": "hr_employee_table",
+          "type": "table",
+          "title": "Employee Snapshot",
+          "datasetId": "hr_dataset",
+          "columns": [
+            "full_name",
+            "department",
+            "level",
+            "location",
+            "salary",
+            "performance_score"
+          ],
+          "limit": 10,
+          "source": {
+            "datasetId": "hr_dataset",
+            "columns": [
+              "full_name",
+              "department",
+              "level",
+              "location",
+              "salary",
+              "performance_score"
+            ],
+            "limit": 10
+          }
+        }
+      ],
+      "layout": {
+        "grid": {
+          "columns": 5,
+          "rows": 4
+        },
+        "items": [
+          {
+            "chart": "hr_headcount_kpi",
+            "x": 0,
+            "y": 0,
+            "w": 1,
+            "h": 1
+          },
+          {
+            "chart": "hr_department_donut",
+            "x": 1,
+            "y": 0,
+            "w": 2,
+            "h": 1
+          },
+          {
+            "chart": "hr_department_gender_grouped",
+            "x": 3,
+            "y": 0,
+            "w": 2,
+            "h": 1
+          },
+          {
+            "chart": "hr_salary_bar",
+            "x": 0,
+            "y": 1,
+            "w": 2,
+            "h": 1
+          },
+          {
+            "chart": "hr_satisfaction_radar",
+            "x": 2,
+            "y": 1,
+            "w": 3,
+            "h": 1
+          },
+          {
+            "chart": "hr_perf_scatter",
+            "x": 0,
+            "y": 2,
+            "w": 3,
+            "h": 1
+          },
+          {
+            "chart": "hr_hires_line",
+            "x": 3,
+            "y": 2,
+            "w": 2,
+            "h": 1
+          },
+          {
+            "chart": "hr_employee_table",
+            "x": 0,
+            "y": 3,
+            "w": 5,
+            "h": 1
+          }
+        ]
+      },
+      "filters": [
+        {
+          "id": "filter_department",
+          "field": "department",
+          "fieldType": "string",
+          "op": "eq",
+          "value": ""
+        },
+        {
+          "id": "filter_level",
+          "field": "level",
+          "fieldType": "string",
+          "op": "eq",
+          "value": ""
+        },
+        {
+          "id": "filter_gender",
+          "field": "gender",
+          "fieldType": "string",
+          "op": "eq",
+          "value": ""
+        },
+        {
+          "id": "filter_location",
+          "field": "location",
+          "fieldType": "string",
+          "op": "eq",
+          "value": ""
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-03-26T00:00:00.000Z",
+      "updatedAt": "2026-03-26T00:00:00.000Z"
+    },
+    {
+      "id": "db_demo_sales",
+      "name": "Sales Performance Hub",
+      "subtitle": "Revenue, order volume, and product mix across markets and channels.",
+      "themePreset": "business",
+      "presentation": {
+        "numberFormat": "compact",
+        "decimals": 1
+      },
+      "charts": [
+        {
+          "id": "sales_total_kpi",
+          "type": "kpi_card",
+          "title": "Total Sales",
+          "datasetId": "sales_complex",
+          "label": "gross revenue",
+          "format": "currency",
+          "currency": "USD",
+          "presentation": {
+            "icon": "trend",
+            "decimals": 0
+          },
+          "source": {
+            "datasetId": "sales_complex",
+            "valueField": "sales",
+            "aggregation": "sum",
+            "format": "currency",
+            "currency": "USD"
+          }
+        },
+        {
+          "id": "sales_period_combo",
+          "type": "combo",
+          "title": "Revenue and Orders by Period",
+          "datasetId": "sales_complex",
+          "x": "period",
+          "barY": "sales",
+          "lineY": "orders",
+          "source": {
+            "datasetId": "sales_complex",
+            "xField": "period",
+            "barField": "sales",
+            "lineField": "orders",
+            "aggregation": "sum"
+          }
+        },
+        {
+          "id": "sales_channel_area",
+          "type": "area",
+          "title": "Sales Trend by Channel",
+          "datasetId": "sales_complex",
+          "x": "period",
+          "y": "sales",
+          "series": "channel",
+          "source": {
+            "datasetId": "sales_complex",
+            "xField": "period",
+            "yField": "sales",
+            "seriesField": "channel",
+            "aggregation": "sum"
+          }
+        },
+        {
+          "id": "sales_country_channel_stack",
+          "type": "bar_stacked",
+          "title": "Sales by Country and Channel",
+          "datasetId": "sales_complex",
+          "indexBy": "country",
+          "keys": [],
+          "source": {
+            "datasetId": "sales_complex",
+            "xField": "country",
+            "seriesField": "channel",
+            "valueField": "sales",
+            "aggregation": "sum"
+          }
+        },
+        {
+          "id": "sales_category_donut",
+          "type": "donut",
+          "title": "Sales Share by Category",
+          "datasetId": "sales_complex",
+          "source": {
+            "datasetId": "sales_complex",
+            "categoryField": "category",
+            "valueField": "sales",
+            "aggregation": "sum"
+          }
+        },
+        {
+          "id": "sales_orders_bar",
+          "type": "bar",
+          "title": "Orders by Category",
+          "datasetId": "sales_complex",
+          "x": "category",
+          "y": "orders",
+          "source": {
+            "datasetId": "sales_complex",
+            "xField": "category",
+            "yField": "orders",
+            "aggregation": "sum"
+          }
+        },
+        {
+          "id": "sales_aov_radar",
+          "type": "radar",
+          "title": "Average Order Value by Country and Channel",
+          "datasetId": "sales_complex",
+          "indexField": "country",
+          "valueField": "avg_order_value",
+          "seriesField": "channel",
+          "presentation": {
+            "numberFormat": "currency",
+            "currency": "USD",
+            "decimals": 0
+          },
+          "source": {
+            "datasetId": "sales_complex",
+            "indexField": "country",
+            "valueField": "avg_order_value",
+            "seriesField": "channel",
+            "aggregation": "avg"
+          }
+        },
+        {
+          "id": "sales_perf_scatter",
+          "type": "scatter",
+          "title": "Sales vs Orders",
+          "datasetId": "sales_complex",
+          "x": "sales",
+          "y": "orders",
+          "series": "country",
+          "source": {
+            "datasetId": "sales_complex",
+            "xField": "sales",
+            "yField": "orders",
+            "seriesField": "country"
+          }
+        },
+        {
+          "id": "sales_detail_table",
+          "type": "table",
+          "title": "Sales Detail",
+          "datasetId": "sales_complex",
+          "columns": [
+            "period",
+            "country",
+            "channel",
+            "category",
+            "sales",
+            "orders",
+            "avg_order_value"
+          ],
+          "limit": 12,
+          "source": {
+            "datasetId": "sales_complex",
+            "columns": [
+              "period",
+              "country",
+              "channel",
+              "category",
+              "sales",
+              "orders",
+              "avg_order_value"
+            ],
+            "limit": 12
+          }
+        }
+      ],
+      "layout": {
+        "grid": {
+          "columns": 5,
+          "rows": 5
+        },
+        "items": [
+          {
+            "chart": "sales_total_kpi",
+            "x": 0,
+            "y": 0,
+            "w": 1,
+            "h": 1
+          },
+          {
+            "chart": "sales_period_combo",
+            "x": 1,
+            "y": 0,
+            "w": 4,
+            "h": 1
+          },
+          {
+            "chart": "sales_channel_area",
+            "x": 0,
+            "y": 1,
+            "w": 3,
+            "h": 1
+          },
+          {
+            "chart": "sales_category_donut",
+            "x": 3,
+            "y": 1,
+            "w": 2,
+            "h": 1
+          },
+          {
+            "chart": "sales_perf_scatter",
+            "x": 0,
+            "y": 2,
+            "w": 3,
+            "h": 1
+          },
+          {
+            "chart": "sales_country_channel_stack",
+            "x": 3,
+            "y": 2,
+            "w": 2,
+            "h": 1
+          },
+          {
+            "chart": "sales_orders_bar",
+            "x": 0,
+            "y": 3,
+            "w": 2,
+            "h": 1
+          },
+          {
+            "chart": "sales_aov_radar",
+            "x": 2,
+            "y": 3,
+            "w": 3,
+            "h": 1
+          },
+          {
+            "chart": "sales_detail_table",
+            "x": 0,
+            "y": 4,
+            "w": 5,
+            "h": 1
+          }
+        ]
+      },
+      "filters": [
+        {
+          "id": "filter_year",
+          "field": "year",
+          "fieldType": "number",
+          "op": "eq",
+          "value": ""
+        },
+        {
+          "id": "filter_month",
+          "field": "month",
+          "fieldType": "string",
+          "op": "eq",
+          "value": ""
+        },
+        {
+          "id": "filter_country",
+          "field": "country",
+          "fieldType": "string",
+          "op": "eq",
+          "value": ""
+        },
+        {
+          "id": "filter_channel",
+          "field": "channel",
+          "fieldType": "string",
+          "op": "eq",
+          "value": ""
+        },
+        {
+          "id": "filter_category",
+          "field": "category",
+          "fieldType": "string",
+          "op": "eq",
+          "value": ""
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-03-26T00:00:00.000Z",
+      "updatedAt": "2026-03-26T00:00:00.000Z"
+    },
+    {
+      "id": "db_demo_marketing",
+      "name": "Marketing Campaign Command Center",
+      "subtitle": "Spend allocation, campaign efficiency, and conversion performance by channel.",
+      "themePreset": "dark_analytics",
+      "presentation": {
+        "numberFormat": "compact",
+        "decimals": 1
+      },
+      "charts": [
+        {
+          "id": "mkt_roi_kpi",
+          "type": "kpi_card",
+          "title": "Blended ROI",
+          "datasetId": "marketing_campaign_performance",
+          "label": "average campaign ROI",
+          "format": "percent",
+          "presentation": {
+            "icon": "target",
+            "decimals": 1
+          },
+          "source": {
+            "datasetId": "marketing_campaign_performance",
+            "valueField": "roi",
+            "aggregation": "avg",
+            "format": "percent"
+          }
+        },
+        {
+          "id": "mkt_spend_revenue_combo",
+          "type": "combo",
+          "title": "Spend and Revenue by Period",
+          "datasetId": "marketing_campaign_performance",
+          "x": "period",
+          "barY": "cost",
+          "lineY": "revenue",
+          "presentation": {
+            "numberFormat": "currency",
+            "currency": "USD",
+            "decimals": 0
+          },
+          "source": {
+            "datasetId": "marketing_campaign_performance",
+            "xField": "period",
+            "barField": "cost",
+            "lineField": "revenue",
+            "aggregation": "sum"
+          }
+        },
+        {
+          "id": "mkt_conversions_grouped",
+          "type": "bar_grouped",
+          "title": "Conversions by Channel and Objective",
+          "datasetId": "marketing_campaign_performance",
+          "indexBy": "channel",
+          "keys": [],
+          "source": {
+            "datasetId": "marketing_campaign_performance",
+            "xField": "channel",
+            "seriesField": "objective",
+            "valueField": "conversions",
+            "aggregation": "sum"
+          }
+        },
+        {
+          "id": "mkt_spend_donut",
+          "type": "donut",
+          "title": "Spend Share by Channel",
+          "datasetId": "marketing_campaign_performance",
+          "source": {
+            "datasetId": "marketing_campaign_performance",
+            "categoryField": "channel",
+            "valueField": "cost",
+            "aggregation": "sum"
+          }
+        },
+        {
+          "id": "mkt_impressions_area",
+          "type": "area",
+          "title": "Impressions Trend by Channel",
+          "datasetId": "marketing_campaign_performance",
+          "x": "period",
+          "y": "impressions",
+          "series": "channel",
+          "source": {
+            "datasetId": "marketing_campaign_performance",
+            "xField": "period",
+            "yField": "impressions",
+            "seriesField": "channel",
+            "aggregation": "sum"
+          }
+        },
+        {
+          "id": "mkt_ctr_radar",
+          "type": "radar",
+          "title": "Average CTR by Channel and Region",
+          "datasetId": "marketing_campaign_performance",
+          "indexField": "channel",
+          "valueField": "ctr",
+          "seriesField": "region",
+          "presentation": {
+            "numberFormat": "percent",
+            "decimals": 1
+          },
+          "source": {
+            "datasetId": "marketing_campaign_performance",
+            "indexField": "channel",
+            "valueField": "ctr",
+            "seriesField": "region",
+            "aggregation": "avg"
+          }
+        },
+        {
+          "id": "mkt_cost_revenue_scatter",
+          "type": "scatter",
+          "title": "Cost vs Revenue by Campaign",
+          "datasetId": "marketing_campaign_performance",
+          "x": "cost",
+          "y": "revenue",
+          "series": "channel",
+          "presentation": {
+            "numberFormat": "currency",
+            "currency": "USD",
+            "decimals": 0
+          },
+          "source": {
+            "datasetId": "marketing_campaign_performance",
+            "xField": "cost",
+            "yField": "revenue",
+            "seriesField": "channel"
+          }
+        },
+        {
+          "id": "mkt_cac_bar",
+          "type": "bar",
+          "title": "Average CAC by Channel",
+          "datasetId": "marketing_campaign_performance",
+          "x": "channel",
+          "y": "cac",
+          "presentation": {
+            "numberFormat": "currency",
+            "currency": "USD",
+            "decimals": 0
+          },
+          "source": {
+            "datasetId": "marketing_campaign_performance",
+            "xField": "channel",
+            "yField": "cac",
+            "aggregation": "avg"
+          }
+        },
+        {
+          "id": "mkt_campaign_table",
+          "type": "table",
+          "title": "Campaign Detail",
+          "datasetId": "marketing_campaign_performance",
+          "columns": [
+            "period",
+            "campaign_name",
+            "channel",
+            "objective",
+            "region",
+            "conversions",
+            "cost",
+            "revenue",
+            "roi",
+            "cac"
+          ],
+          "limit": 12,
+          "source": {
+            "datasetId": "marketing_campaign_performance",
+            "columns": [
+              "period",
+              "campaign_name",
+              "channel",
+              "objective",
+              "region",
+              "conversions",
+              "cost",
+              "revenue",
+              "roi",
+              "cac"
+            ],
+            "limit": 12
+          }
+        }
+      ],
+      "layout": {
+        "grid": {
+          "columns": 5,
+          "rows": 5
+        },
+        "items": [
+          {
+            "chart": "mkt_roi_kpi",
+            "x": 0,
+            "y": 0,
+            "w": 1,
+            "h": 1
+          },
+          {
+            "chart": "mkt_spend_revenue_combo",
+            "x": 1,
+            "y": 0,
+            "w": 2,
+            "h": 1
+          },
+          {
+            "chart": "mkt_spend_donut",
+            "x": 3,
+            "y": 0,
+            "w": 2,
+            "h": 1
+          },
+          {
+            "chart": "mkt_conversions_grouped",
+            "x": 0,
+            "y": 1,
+            "w": 3,
+            "h": 1
+          },
+          {
+            "chart": "mkt_impressions_area",
+            "x": 3,
+            "y": 1,
+            "w": 2,
+            "h": 1
+          },
+          {
+            "chart": "mkt_cost_revenue_scatter",
+            "x": 0,
+            "y": 2,
+            "w": 3,
+            "h": 2
+          },
+          {
+            "chart": "mkt_ctr_radar",
+            "x": 3,
+            "y": 2,
+            "w": 2,
+            "h": 1
+          },
+          {
+            "chart": "mkt_cac_bar",
+            "x": 3,
+            "y": 3,
+            "w": 2,
+            "h": 1
+          },
+          {
+            "chart": "mkt_campaign_table",
+            "x": 0,
+            "y": 4,
+            "w": 5,
+            "h": 1
+          }
+        ]
+      },
+      "filters": [
+        {
+          "id": "filter_year",
+          "field": "year",
+          "fieldType": "number",
+          "op": "eq",
+          "value": ""
+        },
+        {
+          "id": "filter_month",
+          "field": "month",
+          "fieldType": "string",
+          "op": "eq",
+          "value": ""
+        },
+        {
+          "id": "filter_channel",
+          "field": "channel",
+          "fieldType": "string",
+          "op": "eq",
+          "value": ""
+        },
+        {
+          "id": "filter_objective",
+          "field": "objective",
+          "fieldType": "string",
+          "op": "eq",
+          "value": ""
+        },
+        {
+          "id": "filter_region",
+          "field": "region",
+          "fieldType": "string",
+          "op": "eq",
+          "value": ""
+        },
+        {
+          "id": "filter_audience",
+          "field": "audience",
+          "fieldType": "string",
+          "op": "eq",
+          "value": ""
+        }
+      ],
+      "published": true,
+      "createdAt": "2026-03-26T00:00:00.000Z",
+      "updatedAt": "2026-03-26T00:00:00.000Z"
+    }
+  ]
+}

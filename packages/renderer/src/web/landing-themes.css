@@ -1,0 +1,50 @@
+/* Landing theme palette shared with the marketing site */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #1f2937;
+  /* Brand palette */
+  --color-primary: #AECF3B;   /* lime */
+  --color-secondary: #A16AE8; /* lilac */
+  --pattern-opacity: 0.08;
+
+  /* Renderer chrome variables derived from landing colors */
+  --luminon-bg: var(--color-bg);
+  --luminon-fg: var(--color-text);
+  --luminon-card: color-mix(in srgb, var(--color-bg) 90%, #dfe2ea 10%);
+  --luminon-muted: color-mix(in srgb, var(--color-text) 65%, var(--color-bg) 35%);
+  --luminon-border: color-mix(in srgb, var(--color-text) 18%, var(--color-bg) 82%);
+  --luminon-primary: var(--color-primary);
+  --luminon-primary-soft: color-mix(in srgb, var(--color-bg) 70%, var(--color-primary) 30%);
+  --luminon-shadow: 0 14px 40px -14px color-mix(in srgb, var(--color-primary) 35%, transparent);
+  --luminon-frame-bg: var(--color-bg);
+  --luminon-aside-bg: color-mix(in srgb, var(--color-bg) 92%, var(--color-primary) 8%);
+  --luminon-frame-border: color-mix(in srgb, var(--color-text) 18%, var(--color-bg) 82%);
+  --luminon-input-bg: color-mix(in srgb, var(--color-bg) 96%, var(--color-secondary) 4%);
+  --luminon-nav-hover: color-mix(in srgb, var(--color-bg) 82%, var(--color-primary) 18%);
+  --luminon-hero-sub: color-mix(in srgb, var(--color-text) 70%, var(--color-bg) 30%);
+  --luminon-pill-bg: color-mix(in srgb, var(--color-bg) 78%, var(--color-primary) 22%);
+  --luminon-title-btn-bg: color-mix(in srgb, var(--color-bg) 86%, var(--color-secondary) 14%);
+  --luminon-title-btn-border: color-mix(in srgb, var(--color-primary) 32%, transparent);
+  --luminon-action-disabled: color-mix(in srgb, var(--color-text) 45%, transparent);
+  --luminon-dashboard-title: var(--color-secondary);
+  --luminon-secondary: var(--color-secondary);
+  --luminon-nav-active-bg: color-mix(in srgb, var(--color-secondary) 12%, var(--color-bg) 88%);
+}
+
+/* Dark theme from landing navbar toggle */
+html.theme-dark {
+  /* Keep brand colors; only switch background/text */
+  --color-bg: #071330;
+  --color-text: #f8fafc;
+  --color-primary: #AECF3B;
+  --color-secondary: #A16AE8;
+  --pattern-opacity: 0.07;
+
+  /* Dark surfaces (cards/inputs) */
+  --luminon-card: color-mix(in srgb, var(--color-bg) 82%, #0f1f4a 18%);
+  --luminon-border: color-mix(in srgb, var(--color-text) 18%, var(--color-bg) 82%);
+  --luminon-input-bg: color-mix(in srgb, var(--color-bg) 88%, var(--color-secondary) 12%);
+  --luminon-chart-card-bg: color-mix(in srgb, var(--color-bg) 80%, #0f1f4a 20%);
+}
+
+/* Forest theme from landing navbar toggle */
