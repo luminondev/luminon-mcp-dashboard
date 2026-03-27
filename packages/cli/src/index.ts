@@ -154,6 +154,18 @@ function logPathFor(target: ManagedTarget): string {
   return path.join(logsDir, `${target}.log`);
 }
 
+function openBrowser(url: string): void {
+  const platform = process.platform;
+  const command = platform === "darwin" ? "open" : platform === "win32" ? "cmd" : "xdg-open";
+  const args = platform === "win32" ? ["/c", "start", "", url] : [url];
+  try {
+    const child = spawn(command, args, { stdio: "ignore", detached: true });
+    child.unref();
+  } catch (error) {
+    console.warn(`Failed to open browser: ${error instanceof Error ? error.message : String(error)}`);
+  }
+}
+
 function startManagedProcess(target: ManagedTarget): number {
   ensureBaseDir();
   const existing = loadLock();
@@ -187,6 +199,17 @@ function startManagedProcess(target: ManagedTarget): number {
   });
 
   console.log(`${processLabel(target)} started (pid ${child.pid ?? "unknown"}). Log: ${logPath}`);
+
+  if (target === "renderer") {
+    const port = runtime.env?.RENDERER_PORT ?? runtime.env?.RENDERER_API_PORT ?? "5173";
+    const base = `http://localhost:${port}`;
+    if (runtime.env?.LUMINON_RENDERER_STATIC === "true") {
+      console.log(`Renderer UI: ${base}`);
+      console.log(`Renderer API: ${base}/api`);
+    } else {
+      console.log(`Renderer API: ${base}`);
+    }
+  }
   return child.pid ?? 0;
 }
 
@@ -244,12 +267,14 @@ function printStatus(): void {
 
 function usage(): void {
   console.log(`Usage:
-  luminon mcp [--mode MODE] # run MCP over stdio for an AI Tool
-  luminon start renderer # serve the built renderer at http://localhost:5173
-  luminon stop renderer  # stop only renderer
-  luminon stop mcp       # explain how to stop a host-managed MCP
-  luminon status         # show running processes and data dir
-  luminon help           # show this message`);
+  luminon mcp [--mode MODE]      # run MCP over stdio for an AI Tool
+  luminon start [renderer]       # serve the renderer (default) at http://localhost:5173
+    --no-open                    # do not open the browser
+    --open                       # force opening the browser
+  luminon stop renderer          # stop only renderer
+  luminon stop mcp               # explain how to stop a host-managed MCP
+  luminon status                 # show running processes and data dir
+  luminon help                   # show this message`);
 }
 
 function parseMcpMode(args: string[]): McpMode | undefined {
@@ -275,7 +300,7 @@ function parseMcpMode(args: string[]): McpMode | undefined {
   return undefined;
 }
 
-function start(target: StartTarget): void {
+function start(target: StartTarget, options?: { open?: boolean }): void {
   if (target === "mcp") {
     console.error("MCP uses stdio and must be started with 'luminon mcp' from an AI Tool, not with 'start mcp'.");
     process.exit(1);
@@ -285,7 +310,12 @@ function start(target: StartTarget): void {
     process.exit(1);
   }
   if (target === "renderer") {
+    const shouldOpen = options?.open !== false;
     startManagedProcess("renderer");
+    if (shouldOpen) {
+      const port = process.env.RENDERER_PORT ?? process.env.RENDERER_API_PORT ?? "5173";
+      openBrowser(`http://localhost:${port}`);
+    }
   }
 }
 
@@ -361,6 +391,31 @@ function runMcpStdio(modeOverride?: McpMode): void {
   });
 }
 
+function parseStartArgs(raw: string[]): { target: StartTarget; open: boolean } {
+  let target: StartTarget | undefined;
+  let open = true;
+
+  for (const entry of raw) {
+    if (!entry) continue;
+    if (entry === "--no-open") {
+      open = false;
+      continue;
+    }
+    if (entry === "--open") {
+      open = true;
+      continue;
+    }
+    if (["renderer", "mcp", "stack"].includes(entry)) {
+      target = entry as StartTarget;
+      continue;
+    }
+    usage();
+    process.exit(1);
+  }
+
+  return { target: target ?? "renderer", open };
+}
+
 const [cmd, arg, ...rest] = process.argv.slice(2);
 
 if (!cmd || cmd === "help" || cmd === "--help" || cmd === "-h") {
@@ -372,12 +427,8 @@ if (cmd === "mcp") {
   const modeOverride = parseMcpMode([arg, ...rest].filter((value): value is string => Boolean(value)));
   runMcpStdio(modeOverride);
 } else if (cmd === "start") {
-  const target = (arg as StartTarget | undefined) ?? "stack";
-  if (!["stack", "mcp", "renderer"].includes(target)) {
-    usage();
-    process.exit(1);
-  }
-  start(target);
+  const { target, open } = parseStartArgs([arg, ...rest].filter((value): value is string => Boolean(value)));
+  start(target, { open });
 } else if (cmd === "stop") {
   const target = (arg as StopTarget | undefined) ?? "stack";
   if (!["stack", "mcp", "renderer"].includes(target)) {
