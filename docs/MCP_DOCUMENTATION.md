@@ -5,6 +5,8 @@ description: "Current documentation for the Luminon MCP dashboard workspace"
 
 # MCP Dashboard Documentation
 
+> Status: **Beta** — interfaces and data formats may change until 1.0.
+
 ## Overview
 
 Luminon is a local-first dashboard workspace made of four pieces:

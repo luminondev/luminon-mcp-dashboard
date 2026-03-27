@@ -1,5 +1,7 @@
 # Luminon MCP Dashboard
 
+> Status: **Beta** — expect breaking changes until 1.0.
+
 Luminon is an AI-first dashboard builder with three pieces in one repo:
 
 - an MCP server for dashboards, charts, datasets, filters, and natural-language requests
