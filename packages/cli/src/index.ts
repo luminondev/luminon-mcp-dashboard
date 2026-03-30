@@ -4,6 +4,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { setTimeout as sleep } from "node:timers/promises";
 
 interface ManagedProcess {
   pid?: number;
@@ -31,10 +32,32 @@ const dataDir = resolveDataDir();
 const lockPath = path.join(dataDir, ".luminon-lock.json");
 const logsDir = path.join(dataDir, "logs");
 
+function expandHomeDir(raw: string | undefined): string | undefined {
+  if (!raw) return undefined;
+  return raw.startsWith("~") ? path.join(os.homedir(), raw.slice(1)) : raw;
+}
+
+function ensureWritableDir(target: string): boolean {
+  try {
+    fs.mkdirSync(target, { recursive: true });
+    fs.accessSync(target, fs.constants.W_OK);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 function resolveDataDir(): string {
-  const envDir = process.env.MCP_DATA_DIR?.trim();
-  const expanded = envDir && envDir.startsWith("~") ? path.join(os.homedir(), envDir.slice(1)) : envDir;
-  return expanded && expanded.length > 0 ? expanded : path.join(os.homedir(), "Documents", "luminon");
+  const requested = expandHomeDir(process.env.MCP_DATA_DIR?.trim()) ?? path.join(os.homedir(), "Documents", "luminon");
+  if (ensureWritableDir(requested)) return requested;
+
+  const fallback = path.join(os.tmpdir(), "luminon");
+  if (ensureWritableDir(fallback)) {
+    console.error(`Luminon data dir '${requested}' is not writable. Falling back to '${fallback}'.`);
+    return fallback;
+  }
+
+  return requested;
 }
 
 function ensureBaseDir(): void {
@@ -300,7 +323,23 @@ function parseMcpMode(args: string[]): McpMode | undefined {
   return undefined;
 }
 
-function start(target: StartTarget, options?: { open?: boolean }): void {
+async function waitForRendererReady(port: string, timeoutMs = 15000, intervalMs = 300): Promise<boolean> {
+  const deadline = Date.now() + timeoutMs;
+  const url = `http://localhost:${port}/api/health`;
+
+  while (Date.now() < deadline) {
+    try {
+      const res = await fetch(url, { cache: "no-store" });
+      if (res.ok) return true;
+    } catch {
+      // ignore and retry
+    }
+    await sleep(intervalMs);
+  }
+  return false;
+}
+
+async function start(target: StartTarget, options?: { open?: boolean }): Promise<void> {
   if (target === "mcp") {
     console.error("MCP uses stdio and must be started with 'luminon mcp' from an AI Tool, not with 'start mcp'.");
     process.exit(1);
@@ -314,6 +353,10 @@ function start(target: StartTarget, options?: { open?: boolean }): void {
     startManagedProcess("renderer");
     if (shouldOpen) {
       const port = process.env.RENDERER_PORT ?? process.env.RENDERER_API_PORT ?? "5173";
+      const ready = await waitForRendererReady(port);
+      if (!ready) {
+        console.warn(`Renderer is still starting; refresh if you see 404. (port ${port})`);
+      }
       openBrowser(`http://localhost:${port}`);
     }
   }
@@ -416,29 +459,36 @@ function parseStartArgs(raw: string[]): { target: StartTarget; open: boolean } {
   return { target: target ?? "renderer", open };
 }
 
-const [cmd, arg, ...rest] = process.argv.slice(2);
+async function main(): Promise<void> {
+  const [cmd, arg, ...rest] = process.argv.slice(2);
 
-if (!cmd || cmd === "help" || cmd === "--help" || cmd === "-h") {
-  usage();
-  process.exit(0);
-}
+  if (!cmd || cmd === "help" || cmd === "--help" || cmd === "-h") {
+    usage();
+    process.exit(0);
+  }
 
-if (cmd === "mcp") {
-  const modeOverride = parseMcpMode([arg, ...rest].filter((value): value is string => Boolean(value)));
-  runMcpStdio(modeOverride);
-} else if (cmd === "start") {
-  const { target, open } = parseStartArgs([arg, ...rest].filter((value): value is string => Boolean(value)));
-  start(target, { open });
-} else if (cmd === "stop") {
-  const target = (arg as StopTarget | undefined) ?? "stack";
-  if (!["stack", "mcp", "renderer"].includes(target)) {
+  if (cmd === "mcp") {
+    const modeOverride = parseMcpMode([arg, ...rest].filter((value): value is string => Boolean(value)));
+    runMcpStdio(modeOverride);
+  } else if (cmd === "start") {
+    const { target, open } = parseStartArgs([arg, ...rest].filter((value): value is string => Boolean(value)));
+    await start(target, { open });
+  } else if (cmd === "stop") {
+    const target = (arg as StopTarget | undefined) ?? "stack";
+    if (!["stack", "mcp", "renderer"].includes(target)) {
+      usage();
+      process.exit(1);
+    }
+    stop(target);
+  } else if (cmd === "status") {
+    printStatus();
+  } else {
     usage();
     process.exit(1);
   }
-  stop(target);
-} else if (cmd === "status") {
-  printStatus();
-} else {
-  usage();
-  process.exit(1);
 }
+
+main().catch((error) => {
+  console.error(error instanceof Error ? error.message : String(error));
+  process.exit(1);
+});

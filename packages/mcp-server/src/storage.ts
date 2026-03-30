@@ -1,4 +1,5 @@
 import fs from "node:fs/promises";
+import fsSync from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -139,14 +140,34 @@ export type DataPaths = {
   deletedDashboards: string;
 };
 
+function expandHomeDir(raw: string | undefined): string | undefined {
+  if (!raw) return undefined;
+  return raw.startsWith("~") ? path.join(os.homedir(), raw.slice(1)) : raw;
+}
+
+function ensureWritableDir(target: string): boolean {
+  try {
+    fsSync.mkdirSync(target, { recursive: true });
+    fsSync.accessSync(target, fsSync.constants.W_OK);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 const dataPaths: DataPaths = (() => {
-  const envDir = process.env.MCP_DATA_DIR?.trim();
-  const expandedEnvDir =
-    envDir && envDir.startsWith("~") ? path.join(os.homedir(), envDir.slice(1)) : envDir;
-  const baseDir =
-    expandedEnvDir && expandedEnvDir.length > 0
-      ? expandedEnvDir
-      : path.join(os.homedir(), "Documents", "luminon");
+  const requestedBaseDir =
+    expandHomeDir(process.env.MCP_DATA_DIR?.trim()) ?? path.join(os.homedir(), "Documents", "luminon");
+  const fallbackBaseDir = path.join(os.tmpdir(), "luminon");
+  const baseDir = ensureWritableDir(requestedBaseDir)
+    ? requestedBaseDir
+    : ensureWritableDir(fallbackBaseDir)
+    ? fallbackBaseDir
+    : requestedBaseDir;
+
+  if (baseDir !== requestedBaseDir) {
+    console.error(`Luminon data dir '${requestedBaseDir}' is not writable. Falling back to '${baseDir}'.`);
+  }
 
   return {
     baseDir,

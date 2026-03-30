@@ -1,47 +1,63 @@
-# Luminon MCP Dashboard
+<div align="center">
 
-> Status: **Beta** — expect breaking changes until 1.0.
+# <img src="https://raw.githubusercontent.com/luminondev/luminon-mcp-dashboard/main/packages/renderer/src/web/assets/logo.svg" width="200" alt="Luminon logo"  /> Luminon MCP Dashboard
+
+**Turn prompts into dashboards.**  
+Upload CSV/JSON and say: “Bar chart of sales by region.” Done.  
+Visit: [luminon.dev](https://luminon.dev)
+
+[![npm](https://img.shields.io/npm/v/luminondevmcp-dashboard?color=orange)](https://www.npmjs.com/package/luminondevmcp-dashboard)
+[![Stars](https://img.shields.io/github/stars/luminondev/luminon-mcp-dashboard)](https://github.com/luminondev/luminon-mcp-dashboard/stargazers)
+[![MIT](https://img.shields.io/github/license/luminondev/luminon-mcp-dashboard)](LICENSE)
+
+</div>
 
 Luminon is an AI-first dashboard builder with three pieces in one repo:
 
-- an MCP server for dashboards, charts, datasets, filters, and natural-language requests
-- a React renderer for local dashboard preview and a static demo build
-- a `luminon` CLI for starting the MCP server or the packaged renderer
+- **MCP server**: dashboard, chart, dataset, filter tools, plus natural-language actions.
+- **React renderer**: local preview and static demo build.
+- **`luminon` CLI**: start the MCP over stdio (AI tools) or serve the packaged renderer.
 
-## Package usage
+## ✨ Why you’ll like it (devs and non-devs)
+- **Zero-code**: natural language → auto layout + charts (bar, line, donut, scatter, KPI).
+- **Themes & filters**: colors, layouts, global filters; presentation mode.
+- **Live data**: swap datasets, use snapshots for recovery.
+- **MCP + Web**: Node.js/TS for your AI assistant, React/Nivo to view/share.
+- **Optional REST/SSE**: update datasets without extra SDKs or tokens.
 
-Run the published package directly with `npx`:
+<div align="center">
+<img src="Luminon.gif" alt="Luminon dashboard preview" width="100%" style="max-width:720px; border-radius:12px; box-shadow:0 12px 40px rgba(0,0,0,0.5);" />
+</div>
 
+## 🚀 Quick start
 ```bash
-npx -y @luminondev/mcp-dashboard mcp --mode lite
-npx -y @luminondev/mcp-dashboard start renderer
+npx -y @luminondev/mcp-dashboard start                 # Start local renderer
+npx -y @luminondev/mcp-dashboard mcp --mode full        # MCP config for AI tools (Claude, Gemini, Codex, Perplexity)
 ```
 
-Recommended modes:
-
-- `full` for the complete MCP surface
-- `lite` for lower token usage while keeping `dashboard_nl`
-- `ultra-lite` for the smallest tool surface in quota-limited AI clients
+Modes:
+- `full` exposes every MCP tool
+- `lite` lowers token use while keeping `dashboard_nl` (natural language)
+- `ultra-lite` is the smallest surface for tight quotas
 
 ## Local development
 
+Install and build:
 ```bash
 npm install
 npm run build
 ```
 
-Use the built CLI locally:
-
-```bash
-node packages/cli/dist/index.js mcp --mode lite
-node packages/cli/dist/index.js start renderer
-```
-
-For live development:
-
+Run dev servers (hot reload):
 ```bash
 npm run dev:mcp
 npm run dev:renderer
+```
+
+Run built CLI directly:
+```bash
+node packages/cli/dist/index.js mcp --mode lite
+node packages/cli/dist/index.js start renderer
 ```
 
 Local URLs:
@@ -63,8 +79,22 @@ The renderer build also regenerates the static demo from the same seed files, so
 - `packages/shared` — shared schemas and types
 - `docs/MCP_DOCUMENTATION.md` — full MCP reference
 
-## Documentation
+<div align="left" style="margin-top: 24px;">
+  <a href="docs/MCP_DOCUMENTATION.md" style="color:#7fb1b8; font-family: Georgia, 'Times New Roman', serif; font-size:20px; text-decoration:none;">
+    MCP Docs →
+  </a>
+  <span style="color:#7fb1b8; font-family: Georgia, 'Times New Roman', serif; font-size:20px;"> | </span>
+  <a href="CONTRIBUTING.md" style="color:#7fb1b8; font-family: Georgia, 'Times New Roman', serif; font-size:20px; text-decoration:none;">
+    Contribute
+  </a>
+  <span style="color:#7fb1b8; font-family: Georgia, 'Times New Roman', serif; font-size:20px;"> | </span>
+  <a href="LICENSE" style="color:#7fb1b8; font-family: Georgia, 'Times New Roman', serif; font-size:20px; text-decoration:none;">
+    MIT License
+  </a>
+  <span style="color:#7fb1b8; font-family: Georgia, 'Times New Roman', serif; font-size:20px;"> | </span>
+  <a href="https://luminon.dev" style="color:#7fb1b8; font-family: Georgia, 'Times New Roman', serif; font-size:20px; text-decoration:none;">
+    luminon.dev
+  </a>
+</div>
 
-- Full MCP documentation: `docs/MCP_DOCUMENTATION.md`
-- Contribution guide: `CONTRIBUTING.md`
-- License: `MIT`
+> Status: **Beta** — expect breaking changes until 1.0.
