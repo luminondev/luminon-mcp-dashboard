@@ -1,10 +1,11 @@
 <div align="center">
 
-# <img src="https://raw.githubusercontent.com/luminondev/luminon-mcp-dashboard/main/packages/renderer/src/web/assets/logo.svg" width="200" alt="Luminon logo"  /> Luminon MCP Dashboard
+# <img src="logo.svg" width="40" alt="Luminon logo" /> Luminon MCP Dashboard
 
 **Turn prompts into dashboards.**  
 Upload CSV/JSON and say: “Bar chart of sales by region.” Done.  
 Visit: [luminon.dev](https://luminon.dev)
+Demo: [demo.luminon.dev](https://demo.luminon.dev) (renderer)
 
 [![npm](https://img.shields.io/npm/v/luminondevmcp-dashboard?color=orange)](https://www.npmjs.com/package/luminondevmcp-dashboard)
 [![Stars](https://img.shields.io/github/stars/luminondev/luminon-mcp-dashboard)](https://github.com/luminondev/luminon-mcp-dashboard/stargazers)
