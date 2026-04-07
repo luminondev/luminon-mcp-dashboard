@@ -7,7 +7,7 @@ Upload CSV/JSON and say: “Bar chart of sales by region.” Done.
 Visit: [luminon.dev](https://luminon.dev)
 Demo: [demo.luminon.dev](https://demo.luminon.dev) (renderer)
 
-[![npm](https://img.shields.io/npm/v/luminondevmcp-dashboard?color=orange)](https://www.npmjs.com/package/luminondevmcp-dashboard)
+[![npm](https://img.shields.io/npm/v/%40luminondev%2Fmcp-dashboard?color=orange)](https://www.npmjs.com/package/@luminondev/mcp-dashboard)
 [![Stars](https://img.shields.io/github/stars/luminondev/luminon-mcp-dashboard)](https://github.com/luminondev/luminon-mcp-dashboard/stargazers)
 [![MIT](https://img.shields.io/github/license/luminondev/luminon-mcp-dashboard)](LICENSE)
 
